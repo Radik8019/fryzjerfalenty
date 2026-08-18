@@ -246,7 +246,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'champagne',
 
-    image: '/images/gallery/color-ash-before-after.png',
+    image: '/images/gallery/color-ash-before-after-v2.png',
     focus: '50% 6%',
 
   },

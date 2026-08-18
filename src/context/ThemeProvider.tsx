@@ -17,7 +17,7 @@ type ThemeContextValue = {
 }
 
 const ThemeContext = createContext<ThemeContextValue | null>(null)
-const STORAGE_KEY = 'rk-theme'
+const STORAGE_KEY = 'rk-theme-v2'
 
 function readStoredTheme(): Theme | null {
   try {
@@ -29,10 +29,6 @@ function readStoredTheme(): Theme | null {
   return null
 }
 
-function systemTheme(): Theme {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-}
-
 function applyTheme(theme: Theme) {
   document.documentElement.dataset.theme = theme
   document.documentElement.style.colorScheme = theme
@@ -42,8 +38,8 @@ function applyTheme(theme: Theme) {
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>(() => {
-    if (typeof window === 'undefined') return 'light'
-    return readStoredTheme() ?? systemTheme()
+    if (typeof window === 'undefined') return 'dark'
+    return readStoredTheme() ?? 'dark'
   })
 
   useEffect(() => {

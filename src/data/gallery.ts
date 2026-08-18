@@ -234,6 +234,25 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
+    id: 'color-ash-before-after',
+
+    category: 'color',
+
+    title: { pl: 'Korekta blondu', en: 'Blonde correction' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/color-ash-before-after.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
     id: 'cut-asymmetric',
 
     category: 'cut',

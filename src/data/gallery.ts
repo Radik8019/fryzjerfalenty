@@ -402,5 +402,43 @@ export const galleryWorks: GalleryWork[] = [
 
   },
 
+  {
+
+    id: 'curly-portrait-denim',
+
+    category: 'styling',
+
+    title: { pl: 'Kręcone — portret', en: 'Curls — portrait' },
+
+    technique: { pl: 'Włosy kręcone', en: 'Curly hair' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/curly-portrait-denim.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'curly-nape-salon',
+
+    category: 'styling',
+
+    title: { pl: 'Kręcone — tył', en: 'Curls — back' },
+
+    technique: { pl: 'Włosy kręcone', en: 'Curly hair' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'copper',
+
+    image: '/images/gallery/curly-nape-salon.png',
+    focus: '50% 6%',
+
+  },
+
 ]
 

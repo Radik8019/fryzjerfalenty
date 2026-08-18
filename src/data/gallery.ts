@@ -441,5 +441,62 @@ export const galleryWorks: GalleryWork[] = [
 
   },
 
+  {
+
+    id: 'curly-salon-front',
+
+    category: 'styling',
+
+    title: { pl: 'Kręcone — salon', en: 'Curls — salon' },
+
+    technique: { pl: 'Włosy kręcone', en: 'Curly hair' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'espresso',
+
+    image: '/images/gallery/curly-salon-front.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'curly-stripe-portrait',
+
+    category: 'styling',
+
+    title: { pl: 'Kręcone — objętość twarzy', en: 'Curls — face volume' },
+
+    technique: { pl: 'Włosy kręcone', en: 'Curly hair' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'rose',
+
+    image: '/images/gallery/curly-stripe-portrait.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'curly-stripe-profile',
+
+    category: 'styling',
+
+    title: { pl: 'Kręcone — profil', en: 'Curls — profile' },
+
+    technique: { pl: 'Włosy kręcone', en: 'Curly hair' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'stone',
+
+    image: '/images/gallery/curly-stripe-profile.png',
+    focus: '50% 6%',
+
+  },
+
 ]
 

@@ -169,7 +169,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'noir',
 
-    image: '/images/gallery/cut-asymmetric.png',
+    image: '/images/gallery/cut-asymmetric-profile.png',
     focus: '50% 6%',
 
   },

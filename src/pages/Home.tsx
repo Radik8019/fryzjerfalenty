@@ -63,10 +63,10 @@ export function HomePage() {
             <div className="hero-cosmic__photo-stack">
               <img
                 className="hero-cosmic__photo"
-                src={publicUrl('/images/hero-atelier.png')}
+                src={publicUrl('/images/hero-atelier-curls.png')}
                 alt=""
-                width={1253}
-                height={832}
+                width={1024}
+                height={679}
                 loading="eager"
                 decoding="async"
               />

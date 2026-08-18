@@ -40,7 +40,7 @@ export function GlowTile({ work }: Props) {
     <button
       ref={ref}
       type="button"
-      className={`glow-tile glow-tile--${work.tone}${work.image ? ' glow-tile--photo' : ''}${open ? ' is-open' : ''}`}
+      className={`glow-tile glow-tile--${work.tone}${work.image ? ' glow-tile--photo' : ''}${work.fit === 'contain' ? ' glow-tile--contain' : ''}${open ? ' is-open' : ''}`}
       aria-expanded={open}
       aria-label={work.title[locale]}
       onPointerMove={onMove}

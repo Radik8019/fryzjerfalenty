@@ -147,8 +147,23 @@
   background: none;
 }
 
+.glow-tile--contain .glow-tile__media,
+.glow-tile--contain.is-open .glow-tile__media {
+  transform: none;
+  background: var(--work-bg);
+}
+
+.glow-tile--contain .glow-tile__photo {
+  object-fit: contain;
+}
+
 .glow-tile.is-open .glow-tile__media {
   transform: scale(1.08);
+}
+
+.glow-tile--contain .glow-tile__media,
+.glow-tile--contain.is-open .glow-tile__media {
+  transform: none;
 }
 
 .glow-tile__spot {
@@ -729,6 +744,11 @@
   .glow-tile:hover .glow-tile__media,
   .glow-tile.is-open .glow-tile__media {
     transform: scale(1.08);
+  }
+
+  .glow-tile--contain:hover .glow-tile__media,
+  .glow-tile--contain.is-open .glow-tile__media {
+    transform: none;
   }
 
   .glow-tile:hover .glow-tile__spot,

@@ -17,6 +17,7 @@ export type GalleryWork = {
   tone: string
   image?: string
   focus?: string
+  fit?: 'contain'
 }
 
 
@@ -435,8 +436,9 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'copper',
 
-    image: '/images/gallery/curly-nape-salon.png',
-    focus: '50% 6%',
+    image: '/images/gallery/curly-nape-salon-full.png',
+    focus: '50% 42%',
+    fit: 'contain',
 
   },
 

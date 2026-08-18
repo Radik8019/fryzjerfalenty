@@ -157,19 +157,19 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-peach-pixie',
+    id: 'color-burgundy-pixie',
 
     category: 'color',
 
-    title: { pl: 'Morelowy pixie', en: 'Peach pixie' },
+    title: { pl: 'Burgundowy pixie', en: 'Burgundy pixie' },
 
     technique: { pl: 'Koloryzacja', en: 'Colour' },
 
     note: { pl: '', en: '' },
 
-    tone: 'rose',
+    tone: 'espresso',
 
-    image: '/images/gallery/color-peach-pixie.png',
+    image: '/images/gallery/color-burgundy-pixie.png',
     focus: '50% 6%',
 
   },
@@ -195,19 +195,19 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-burgundy-pixie',
+    id: 'color-peach-pixie',
 
     category: 'color',
 
-    title: { pl: 'Burgundowy pixie', en: 'Burgundy pixie' },
+    title: { pl: 'Morelowy pixie', en: 'Peach pixie' },
 
     technique: { pl: 'Koloryzacja', en: 'Colour' },
 
     note: { pl: '', en: '' },
 
-    tone: 'espresso',
+    tone: 'rose',
 
-    image: '/images/gallery/color-burgundy-pixie.png',
+    image: '/images/gallery/color-peach-pixie.png',
     focus: '50% 6%',
 
   },

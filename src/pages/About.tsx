@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { publicUrl } from '../config/assets'
 import { CONTACT_FORM_HASH } from '../config/routes'
 import { site } from '../config/site'
 import { useI18n } from '../hooks/useI18n'
@@ -12,7 +13,7 @@ export function AboutPage() {
       <div className="wrap about-grid">
         <figure className="portrait">
           <img
-            src="/images/about-atelier.png"
+            src={publicUrl('/images/about-atelier.png')}
             alt={site.name}
             width={745}
             height={1024}

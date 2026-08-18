@@ -4,6 +4,7 @@ import { ServiceBento } from '../components/home/ServiceBento'
 
 import { ReviewSlider } from '../components/reviews/ReviewSlider'
 
+import { publicUrl } from '../config/assets'
 import { CONTACT_FORM_HASH, galleryCategoryHref } from '../config/routes'
 
 import { site } from '../config/site'
@@ -62,7 +63,7 @@ export function HomePage() {
             <div className="hero-cosmic__photo-stack">
               <img
                 className="hero-cosmic__photo"
-                src="/images/hero-atelier.png"
+                src={publicUrl('/images/hero-atelier.png')}
                 alt=""
                 width={1253}
                 height={832}

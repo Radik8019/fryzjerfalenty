@@ -1,4 +1,5 @@
 import { useRef, useState, type CSSProperties, type PointerEvent } from 'react'
+import { publicUrl } from '../../config/assets'
 import { type GalleryWork } from '../../data/gallery'
 import { useI18n } from '../../hooks/useI18n'
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion'
@@ -50,7 +51,7 @@ export function GlowTile({ work }: Props) {
         {work.image ? (
           <img
             className="glow-tile__photo"
-            src={work.image}
+            src={publicUrl(work.image)}
             alt=""
             style={work.focus ? ({ '--photo-focus': work.focus } as CSSProperties) : undefined}
           />

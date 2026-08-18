@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
+import { routerBasename } from './config/assets'
 import { ThemeProvider } from './context/ThemeProvider'
 import { AboutPage } from './pages/About'
 import { ContactPage } from './pages/Contact'
@@ -52,7 +53,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={routerBasename()}>
         <AppRoutes />
       </BrowserRouter>
     </ThemeProvider>

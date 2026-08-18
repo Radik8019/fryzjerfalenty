@@ -34,7 +34,7 @@
   }
 
   .header-inner {
-    width: min(1280px, calc(100% - 24px));
+    width: 100%;
     gap: 12px;
   }
 
@@ -89,15 +89,15 @@
 
   .hero-cosmic {
     padding-top: calc(var(--header-offset) + 2px);
-    padding-bottom: calc(12px + var(--safe-bottom));
+    padding-bottom: 12px;
   }
 
   .hero-cosmic__grid {
     grid-template-columns: 1fr;
     align-items: start;
     min-height: 0;
-    gap: 20px;
-    padding: 4px 0 6px;
+    gap: 14px;
+    padding: 0 0 4px;
   }
 
   .hero-cosmic__figure {
@@ -111,12 +111,51 @@
 
   .hero-cosmic__photo {
     width: 100%;
-    max-height: min(58vh, 500px);
+    max-height: min(42vh, 340px);
+    max-height: min(42svh, 340px);
     object-position: center center;
   }
 
   .hero-cosmic__copy {
     padding-block: 0;
+    max-width: none;
+    text-align: left;
+  }
+
+  .hero-cosmic__copy .kicker {
+    font-size: 0.62rem;
+  }
+
+  .hero-cosmic__copy .brand-name {
+    font-size: clamp(1.9rem, 8vw, 2.7rem);
+    margin-top: 6px;
+  }
+
+  .hero-cosmic__copy .brand-tag {
+    margin-top: 6px;
+  }
+
+  .hero-cosmic__copy .hero-lead {
+    font-size: 0.92rem;
+    margin-top: 10px;
+    max-width: none;
+  }
+
+  .hero-cosmic__copy .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 16px;
+    gap: 10px;
+  }
+
+  .hero-cosmic__copy .hero-actions .cta {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .home-cta .cta {
+    width: 100%;
+    min-height: 48px;
   }
 
   .site-stage__figure {
@@ -129,31 +168,6 @@
   [data-theme='dark'] .site-stage__bg {
     background-position: 68% top;
     background-size: cover;
-  }
-
-  .hero-cosmic__copy {
-    max-width: none;
-    text-align: left;
-  }
-
-  .hero-cosmic__copy .brand-name {
-    font-size: clamp(2.1rem, 9vw, 3rem);
-  }
-
-  .hero-cosmic__copy .hero-lead {
-    font-size: 0.98rem;
-    margin-top: 16px;
-  }
-
-  .hero-cosmic__copy .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-    margin-top: 22px;
-  }
-
-  .hero-cosmic__copy .hero-actions .cta {
-    width: 100%;
-    min-height: 48px;
   }
 
   .hero-cosmic__bento {
@@ -224,13 +238,13 @@
   .glow-grid,
   .glow-grid.dense {
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 12px;
   }
 
   .glow-tile {
     min-height: 0;
     transform: none;
-    border-radius: 14px;
+    border-radius: 12px;
   }
 
   .glow-tile__body {
@@ -257,12 +271,33 @@
     min-height: 44px;
   }
 
+  .filters {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin: 20px 0 24px;
+  }
+
+  .filters .chip {
+    flex: 1 1 0;
+    min-width: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
   .menu-board {
-    padding: 28px 0 56px;
+    padding: 24px 0 48px;
   }
 
   .menu-board__inner {
-    padding: 36px 20px 32px;
+    padding: 28px 0 24px;
   }
 
   .menu-item {
@@ -284,6 +319,13 @@
 
   .portrait {
     min-height: 0;
+    width: 100%;
+    border-radius: var(--radius);
+  }
+
+  .portrait img {
+    width: 100%;
+    height: auto;
   }
 
   .about-copy .cta,
@@ -302,6 +344,12 @@
     font-size: 1.28rem;
   }
 
+  .contact-card dd a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
   .form input,
   .form select,
   .form textarea {
@@ -314,7 +362,7 @@
   }
 
   .map-frame iframe {
-    height: 220px;
+    height: 240px;
   }
 
   .map-open {
@@ -328,6 +376,10 @@
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+  }
+
+  .footer-nav a {
+    width: 100%;
   }
 }
 
@@ -351,12 +403,13 @@
 
   .glow-grid,
   .glow-grid.dense {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .glow-tile {
     min-height: 0;
+    border-radius: 12px;
   }
 
   .signatures div {
@@ -395,6 +448,12 @@
   }
 
   .hero-cosmic__copy .brand-name {
-    font-size: 2rem;
+    font-size: 1.85rem;
+  }
+
+  .filters .chip {
+    font-size: 0.56rem;
+    letter-spacing: 0.04em;
+    padding: 0 4px;
   }
 }

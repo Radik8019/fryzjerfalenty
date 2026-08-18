@@ -311,6 +311,7 @@
 
   .header-inner {
     gap: 12px;
+    width: 100%;
   }
 
   .header-end {
@@ -334,7 +335,7 @@
     background-image: none;
     background-size: cover;
     background-position: center top;
-    padding: 20px max(24px, var(--safe-right)) calc(32px + var(--safe-bottom)) max(24px, var(--safe-left));
+    padding: 20px calc(var(--page-gutter) + var(--safe-right)) calc(32px + var(--safe-bottom)) calc(var(--page-gutter) + var(--safe-left));
     gap: 4px;
     z-index: 35;
     overflow-y: auto;

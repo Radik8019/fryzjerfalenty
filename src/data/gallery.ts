@@ -157,6 +157,82 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
+    id: 'color-peach-pixie',
+
+    category: 'color',
+
+    title: { pl: 'Morelowy pixie', en: 'Peach pixie' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'rose',
+
+    image: '/images/gallery/color-peach-pixie.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'color-auburn-nape',
+
+    category: 'color',
+
+    title: { pl: 'Kasztanowy undercut', en: 'Auburn undercut' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'copper',
+
+    image: '/images/gallery/color-auburn-nape.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'color-burgundy-pixie',
+
+    category: 'color',
+
+    title: { pl: 'Burgundowy pixie', en: 'Burgundy pixie' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'espresso',
+
+    image: '/images/gallery/color-burgundy-pixie.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'color-rose-undercut',
+
+    category: 'color',
+
+    title: { pl: 'Różowy undercut', en: 'Rose undercut' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/color-rose-undercut.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
     id: 'cut-asymmetric',
 
     category: 'cut',

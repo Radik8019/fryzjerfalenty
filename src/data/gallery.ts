@@ -436,9 +436,8 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'copper',
 
-    image: '/images/gallery/curly-nape-salon-full.png',
-    focus: '50% 42%',
-    fit: 'contain',
+    image: '/images/gallery/curly-nape-salon-portrait.png',
+    focus: '50% 6%',
 
   },
 

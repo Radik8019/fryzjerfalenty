@@ -214,6 +214,44 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
+    id: 'cut-bowl-fringe',
+
+    category: 'cut',
+
+    title: { pl: 'Grzywka — miseczka', en: 'Bowl fringe' },
+
+    technique: { pl: 'Strzyżenie', en: 'Cut' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/cut-bowl-fringe.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'cut-studio-fringe',
+
+    category: 'cut',
+
+    title: { pl: 'Grzywka — studio', en: 'Studio fringe' },
+
+    technique: { pl: 'Strzyżenie', en: 'Cut' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'rose',
+
+    image: '/images/gallery/cut-studio-fringe.png',
+    focus: '50% 6%',
+
+  },
+
+  {
+
     id: 'curly-volume',
 
     category: 'styling',

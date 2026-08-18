@@ -460,10 +460,8 @@
 }
 
 .menu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 28px;
+  display: block;
+  text-align: center;
   padding: 22px 0;
   border-bottom: 1px solid var(--menu-line);
 }

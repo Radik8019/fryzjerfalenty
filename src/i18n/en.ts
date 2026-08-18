@@ -5,7 +5,7 @@ export const en: Messages = {
     home: 'Home',
     gallery: 'Gallery',
     about: 'About',
-    services: 'Service card / prices',
+    services: 'Service card',
     contact: 'Contact',
     book: 'Book a visit',
     menu: 'Menu',
@@ -96,7 +96,7 @@ export const en: Messages = {
   },
   services: {
     kicker: 'Atelier',
-    title: 'Services & prices',
+    title: 'Service card',
     lead: 'Every service is chosen individually. Prices are set after a professional consultation.',
     ladies: 'For her',
     gentlemen: 'For him',

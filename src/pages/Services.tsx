@@ -9,7 +9,6 @@ function MenuItem({ item }: { item: Service }) {
   return (
     <li className="menu-item">
       <p className="menu-item__name">{item.name[locale]}</p>
-      <p className="menu-item__price">{item.price[locale]}</p>
     </li>
   )
 }

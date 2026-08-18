@@ -1,4 +1,4 @@
-/* Compact laptops: long “Karta usług/cennik” must not collide with tools. */
+/* Compact laptops: keep nav labels from colliding with tools. */
 @media (min-width: 961px) and (max-width: 1180px) {
   .nav-desktop {
     gap: 16px;
@@ -266,8 +266,6 @@
   }
 
   .menu-item {
-    flex-wrap: wrap;
-    gap: 8px 16px;
     padding: 18px 0;
   }
 

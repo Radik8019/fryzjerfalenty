@@ -3,7 +3,7 @@ export const pl = {
     home: 'Strona główna',
     gallery: 'Galeria prac',
     about: 'O mnie',
-    services: 'Karta usług/cennik',
+    services: 'Karta usług',
     contact: 'Kontakt',
     book: 'Umów wizytę',
     menu: 'Menu',
@@ -94,7 +94,7 @@ export const pl = {
   },
   services: {
     kicker: 'Atelier',
-    title: 'Usługi i cennik',
+    title: 'Karta usług',
     lead: 'Każda usługa dobierana indywidualnie. Ceny ustalane po profesjonalnej konsultacji.',
     ladies: 'Dla Pań',
     gentlemen: 'Dla Panów',

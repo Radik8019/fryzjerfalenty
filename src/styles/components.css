@@ -282,11 +282,12 @@
 .glow-tile--copper { --work-bg: linear-gradient(160deg, #e2b08a, #b06a45 52%, #5a3224); }
 .glow-tile--stone { --work-bg: linear-gradient(160deg, #cfc6bb, #8a8178 55%, #3e3834); }
 
-/* Gallery hero icon — single active category icon */
+/* Gallery hero icon — single active category icon with 3D tilt */
 .gallery-hero-icon {
   display: flex;
   justify-content: center;
   margin: 0 auto 12px;
+  cursor: default;
 }
 
 .gallery-hero-icon__img {
@@ -295,11 +296,14 @@
   object-fit: contain;
   pointer-events: none;
   user-select: none;
+  will-change: transform, filter;
+  transform-style: preserve-3d;
   filter:
-    drop-shadow(0 0 14px rgba(194, 158, 93, 0.75))
-    drop-shadow(0 0 36px rgba(194, 158, 93, 0.4));
+    drop-shadow(0 0 14px rgba(194, 158, 93, 0.7))
+    drop-shadow(0 0 36px rgba(194, 158, 93, 0.3));
   animation: gallery-icon-in 0.5s ease both;
 }
+
 
 @keyframes gallery-icon-in {
   from {

@@ -4,6 +4,7 @@ import { GlowTile } from '../components/gallery/GlowTile'
 import { GALLERY_WORKS_HASH } from '../config/routes'
 import { type GalleryCategory, galleryWorks } from '../data/gallery'
 import { useI18n } from '../hooks/useI18n'
+import { useTilt3D } from '../hooks/useTilt3D'
 
 function parseGalleryCat(value: string | null): GalleryCategory | null {
   if (value === 'color' || value === 'cut' || value === 'styling') return value
@@ -31,6 +32,8 @@ export function GalleryPage() {
     { id: 'styling', label: t.gallery.styling },
   ]
 
+  const tiltRef = useTilt3D({ maxAngle: 10, perspective: 600, scale: 1.045, glowShift: 12, easing: 0.08 })
+
   const iconSrc =
     filter === 'color' ? '/images/icon-color.png?v=2'
     : filter === 'cut' ? '/images/icon-cut.png?v=2'
@@ -39,8 +42,8 @@ export function GalleryPage() {
   return (
     <section className="section">
       <div className="wrap">
-        <div className="gallery-hero-icon">
-          <img key={filter} className="gallery-hero-icon__img" src={iconSrc} alt="" />
+        <div className="gallery-hero-icon" ref={tiltRef}>
+          <img key={filter} className="gallery-hero-icon__img tilt3d__subject" src={iconSrc} alt="" />
         </div>
         <p className="kicker">{t.gallery.kicker}</p>
         <h1 className="display" style={{ fontSize: 'clamp(2.6rem, 6vw, 4.4rem)', marginTop: 10 }}>

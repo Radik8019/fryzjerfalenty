@@ -345,6 +345,15 @@
   background: var(--surface);
 }
 
+@media (min-width: 961px) {
+  .filters .chip {
+    min-height: 46px;
+    padding: 0 22px;
+    font-size: 0.86rem;
+    letter-spacing: 0.18em;
+  }
+}
+
 .review-slider {
   position: relative;
 }

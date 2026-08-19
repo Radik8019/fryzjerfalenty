@@ -20,7 +20,7 @@ const ICONS: Record<
   },
   curly: {
     dark: '/images/icon-curly.webp?v=3',
-    light: '/images/icon-curly-light.webp?v=3',
+    light: '/images/icon-curly-light.webp?v=4',
     width: 361,
     height: 378,
   },

@@ -498,17 +498,17 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 96px;
-    padding: 14px 10px;
+    min-height: 120px;
+    padding: 18px 12px;
     min-width: 0;
-    gap: 4px;
+    gap: 6px;
   }
 
   .service-bento__card--large {
     grid-column: span 1;
-    min-height: 112px;
-    padding: 16px 14px;
-    gap: 4px;
+    min-height: 130px;
+    padding: 20px 14px;
+    gap: 6px;
   }
 
   .service-bento__card--large .service-bento__text {
@@ -516,15 +516,16 @@ body {
   }
 
   .service-bento__name {
-    font-size: clamp(0.88rem, 3.4vw, 1.05rem);
-    line-height: 1.25;
-    letter-spacing: 0.08em;
+    font-size: clamp(1rem, 3.8vw, 1.18rem);
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    font-weight: 600;
   }
 
   .service-bento__icon svg {
-    width: 24px;
-    height: 24px;
-    opacity: 0.6;
+    width: 48px;
+    height: 48px;
+    opacity: 0.75;
   }
 
   .gallery-cats {

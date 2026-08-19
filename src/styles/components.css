@@ -295,7 +295,9 @@
   object-fit: contain;
   pointer-events: none;
   user-select: none;
-  filter: drop-shadow(0 0 20px rgba(194, 158, 93, 0.5));
+  filter:
+    drop-shadow(0 0 14px rgba(194, 158, 93, 0.75))
+    drop-shadow(0 0 36px rgba(194, 158, 93, 0.4));
   animation: gallery-icon-in 0.5s ease both;
 }
 

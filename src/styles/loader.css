@@ -7,7 +7,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* hairqoo uses --cosmic-void; we reuse current theme bg */
+  height: 100vh;
+  height: 100dvh;
   background: var(--bg);
   transition: opacity 900ms var(--ease), visibility 900ms var(--ease);
 }
@@ -120,6 +121,33 @@
 @keyframes loadSweep {
   to {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .preloader-core {
+    padding: 24px 20px;
+    /* optical center — shift content ~6% above geometric center */
+    transform: translateY(-6vh);
+  }
+
+  .hairqoo-brand__wordmark {
+    font-size: clamp(1.75rem, 8vw, 2.4rem);
+  }
+
+  .preloader-track {
+    width: min(220px, 65vw);
+    margin-top: 22px;
+  }
+
+  .preloader-status {
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    margin-top: 12px;
+  }
+
+  .preloader-horizon {
+    bottom: 22%;
   }
 }
 

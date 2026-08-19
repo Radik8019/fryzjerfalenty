@@ -744,19 +744,29 @@
 
 .map-card {
   margin: 16px 0 0;
-  padding: 28px 22px;
+  padding: 28px 22px 32px;
   border: 1px solid var(--card-stroke);
   border-radius: var(--radius);
   background: var(--card-bg);
   text-align: center;
-  /* Prevent CTA glow/shimmer from bleeding into the next tile */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.map-card .kicker {
+  margin: 0;
 }
 
 .map-card__address {
-  margin: 12px 0 20px;
+  margin: 0;
   color: var(--text);
   font-size: 1.05rem;
+}
+
+.map-card .cta {
+  width: 100%;
 }
 
 .map-frame iframe {

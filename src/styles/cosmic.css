@@ -558,6 +558,14 @@ body {
   .gallery-cats {
     grid-template-columns: 1fr;
   }
+
+  .mobile-nav .cta {
+    width: 100%;
+    padding: 0 26px;
+    min-height: 50px;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

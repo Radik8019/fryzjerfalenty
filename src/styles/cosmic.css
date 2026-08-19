@@ -544,21 +544,26 @@ body {
   }
 
   .gallery-cat {
+    position: relative;
     min-height: 100px;
     padding: 16px 14px;
     min-width: 0;
-    gap: 14px;
+    justify-content: center;
     align-items: center;
   }
 
   .gallery-cat__icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 56px;
   }
 
   .gallery-cat__name {
     font-size: clamp(0.92rem, 3.5vw, 1.2rem);
     letter-spacing: 0.06em;
-    flex: 1;
+    width: 100%;
     text-align: center;
   }
 }

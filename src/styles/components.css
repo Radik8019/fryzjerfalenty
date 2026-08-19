@@ -156,6 +156,26 @@
   background: transparent;
 }
 
+.glow-tile--photo .glow-tile__media::after,
+.hero-cosmic__photo-stack::after,
+.portrait::after {
+  content: 'R.Kostiw';
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  z-index: 3;
+  font-family: var(--font-display);
+  font-size: clamp(0.58rem, 1.15vw, 0.78rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+  pointer-events: none;
+  user-select: none;
+}
+
 .glow-tile--photo .glow-tile__media {
   background: none;
 }

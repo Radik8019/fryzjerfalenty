@@ -150,6 +150,7 @@ body {
 .hero-cosmic__photo-stack {
   position: relative;
   width: min(100%, var(--hero-photo-max-w));
+  overflow: hidden;
 }
 
 .media-shield {

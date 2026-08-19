@@ -247,6 +247,15 @@
     border-radius: 12px;
   }
 
+  .glow-tile--photo .glow-tile__media::after,
+  .hero-cosmic__photo-stack::after,
+  .portrait::after {
+    right: 8px;
+    bottom: 6px;
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+  }
+
   .glow-tile__body {
     padding: 16px;
   }

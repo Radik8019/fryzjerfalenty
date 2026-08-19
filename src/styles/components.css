@@ -289,67 +289,6 @@
   margin: 28px 0 32px;
 }
 
-/* Gallery icon filter bar */
-.gallery-icon-filters {
-  display: flex;
-  justify-content: center;
-  gap: clamp(16px, 4vw, 48px);
-  margin: 36px 0 44px;
-}
-
-.gallery-icon-filter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  opacity: 0.38;
-  transition: opacity 0.35s ease, filter 0.35s ease, transform 0.35s ease;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.gallery-icon-filter--active {
-  opacity: 1;
-  filter: drop-shadow(0 0 18px rgba(194, 158, 93, 0.55));
-  transform: translateY(-3px);
-}
-
-.gallery-icon-filter__img {
-  width: clamp(72px, 12vw, 120px);
-  height: auto;
-  object-fit: contain;
-  pointer-events: none;
-  user-select: none;
-}
-
-.gallery-icon-filter__label {
-  font-family: var(--font-display);
-  font-size: clamp(0.65rem, 1.2vw, 0.78rem);
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--text-soft);
-  transition: color 0.35s ease;
-}
-
-.gallery-icon-filter--active .gallery-icon-filter__label {
-  color: var(--accent);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .gallery-icon-filter:hover {
-    opacity: 0.75;
-    transform: translateY(-2px);
-  }
-  .gallery-icon-filter--active:hover {
-    opacity: 1;
-    transform: translateY(-3px);
-  }
-}
-
 .gallery-works {
   scroll-margin-top: calc(var(--header-offset) + 16px);
 }

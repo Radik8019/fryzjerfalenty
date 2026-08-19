@@ -14,7 +14,7 @@ const ICONS: Record<
   },
   cut: {
     dark: '/images/icon-cut.webp?v=3',
-    light: '/images/icon-cut-light.webp?v=3',
+    light: '/images/icon-cut-light.webp?v=4',
     width: 355,
     height: 381,
   },

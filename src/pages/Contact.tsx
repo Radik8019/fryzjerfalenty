@@ -55,6 +55,11 @@ export function ContactPage() {
       return
     }
 
+    if (!site.splitforms.accessKey) {
+      setStatus('error')
+      return
+    }
+
     if (turnstileSiteKey && !String(payload.get('cf-turnstile-response') ?? '')) {
       setStatus('error')
       return
@@ -75,8 +80,11 @@ export function ContactPage() {
         headers: { Accept: 'application/json' },
         body: payload,
       })
-      const json = (await response.json()) as { success?: boolean }
+      const json = (await response.json()) as { success?: boolean; code?: string; message?: string }
       if (!response.ok || !json.success) {
+        if (import.meta.env.DEV) {
+          console.error('Splitforms error:', json.code ?? response.status, json.message)
+        }
         setStatus('error')
         return
       }

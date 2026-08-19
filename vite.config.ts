@@ -34,8 +34,23 @@ function productionCsp(): Plugin {
   }
 }
 
+function requireProductionEnv(): Plugin {
+  return {
+    name: 'require-production-env',
+    config(_config, { command }) {
+      if (command !== 'build') return
+      const key = process.env.VITE_SPLITFORMS_ACCESS_KEY?.trim()
+      if (!key) {
+        throw new Error(
+          'Missing VITE_SPLITFORMS_ACCESS_KEY. Add the Splitforms access key to GitHub → Settings → Secrets and variables → Actions, then redeploy.',
+        )
+      }
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [react(), productionCsp()],
+  plugins: [react(), productionCsp(), requireProductionEnv()],
   base: '/',
   build: {
     sourcemap: false,

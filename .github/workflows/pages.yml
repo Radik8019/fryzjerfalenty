@@ -24,6 +24,12 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Verify production secrets
+        run: |
+          if [ -z "$VITE_SPLITFORMS_ACCESS_KEY" ]; then
+            echo "::error::VITE_SPLITFORMS_ACCESS_KEY is not set in GitHub Secrets. Formularz kontaktowy nie będzie działał."
+            exit 1
+          fi
       - run: npm run build
         env:
           VITE_TURNSTILE_SITE_KEY: ${{ secrets.VITE_TURNSTILE_SITE_KEY }}

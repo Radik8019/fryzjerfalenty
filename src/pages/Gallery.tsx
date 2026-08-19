@@ -42,19 +42,24 @@ export function GalleryPage() {
           {t.gallery.lead}
         </p>
         <div id={GALLERY_WORKS_HASH} className="gallery-works">
-          <div className="filters" role="group" aria-label={t.gallery.title}>
+          <div className="gallery-icon-filters" role="group" aria-label={t.gallery.title}>
             {chips.map((chip) => (
               <button
                 key={chip.id}
                 type="button"
-                className="chip"
+                className={`gallery-icon-filter${filter === chip.id ? ' gallery-icon-filter--active' : ''}`}
                 aria-pressed={filter === chip.id}
                 onClick={() => {
                   setFilter(chip.id)
                   setSearchParams({ cat: chip.id }, { replace: true })
                 }}
               >
-                {chip.label}
+                <img
+                  src={`/images/icon-${chip.id === 'color' ? 'color' : chip.id === 'cut' ? 'cut' : 'curly'}.png?v=2`}
+                  alt={chip.label}
+                  className="gallery-icon-filter__img"
+                />
+                <span className="gallery-icon-filter__label">{chip.label}</span>
               </button>
             ))}
           </div>

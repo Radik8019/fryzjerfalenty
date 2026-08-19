@@ -560,9 +560,10 @@ body {
   }
 
   .mobile-nav .cta {
-    width: 100%;
-    padding: 0 26px;
-    min-height: 50px;
+    width: auto;
+    align-self: flex-start;
+    padding: 0 32px;
+    min-height: 46px;
     font-size: 0.72rem;
     letter-spacing: 0.18em;
   }

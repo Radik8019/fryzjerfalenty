@@ -352,15 +352,7 @@
   }
 
   .mobile-nav .cta {
-    /* Override shared padding: CTA pill should not be tall */
     margin-top: 14px;
-    justify-self: stretch;
-    width: 100%;
-    padding: 0 26px;
-    min-height: 50px;
-    /* Match luxury CTA typography (same as base .cta) */
-    font-size: 0.72rem;
-    letter-spacing: 0.18em;
   }
 
   .footer-grid,

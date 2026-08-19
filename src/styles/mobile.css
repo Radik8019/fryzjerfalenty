@@ -80,11 +80,7 @@
   }
 
   .mobile-nav .cta {
-    width: 100%;
-    min-height: 48px;
     margin-top: 16px;
-    justify-self: stretch;
-    padding-inline: 22px;
   }
 
   .hero-cosmic {

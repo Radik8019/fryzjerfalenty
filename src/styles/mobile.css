@@ -174,42 +174,52 @@
     padding-top: 4px;
   }
 
+  .service-bento {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  /* Large cards: icon below text, full width */
   .service-bento__card--large {
-    flex-direction: column;
+    grid-column: span 1;
+    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    min-height: 120px;
+    padding: 18px 12px;
+    gap: 10px;
   }
 
   .service-bento__card--large .service-bento__text {
     align-items: center;
   }
 
-  .service-bento {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    overflow: hidden;
-  }
-
+  /* Small cards: horizontal layout, icon at bottom-center */
   .service-bento__card {
-    min-height: 108px;
-    padding: 18px 14px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80px;
+    padding: 14px 10px;
     min-width: 0;
-  }
-
-  .service-bento__card--large {
-    grid-column: span 2;
-    min-height: 120px;
+    gap: 8px;
   }
 
   .service-bento__name {
-    word-break: break-word;
-    overflow-wrap: anywhere;
-    hyphens: auto;
+    font-size: clamp(0.72rem, 2.8vw, 0.88rem);
+    line-height: 1.25;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
   }
 
   .service-bento__icon svg {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
+    opacity: 0.7;
   }
 
   .gallery-cats {

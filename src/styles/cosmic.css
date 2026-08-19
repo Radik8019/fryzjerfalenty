@@ -486,6 +486,75 @@ body {
   -webkit-backdrop-filter: blur(8px);
 }
 
+@media (max-width: 960px) {
+  .service-bento {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .service-bento__card {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80px;
+    padding: 14px 10px;
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .service-bento__card--large {
+    grid-column: span 1;
+    min-height: 120px;
+    padding: 18px 12px;
+    gap: 10px;
+  }
+
+  .service-bento__card--large .service-bento__text {
+    align-items: center;
+  }
+
+  .service-bento__name {
+    font-size: clamp(0.72rem, 2.8vw, 0.88rem);
+    line-height: 1.25;
+  }
+
+  .service-bento__icon svg {
+    width: 28px;
+    height: 28px;
+    opacity: 0.7;
+  }
+
+  .gallery-cats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .gallery-cat {
+    min-height: 108px;
+    padding: 22px 18px;
+    min-width: 0;
+  }
+
+  .gallery-cat__name {
+    font-size: clamp(0.85rem, 3.2vw, 1.15rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .service-bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-bento__card--large {
+    grid-column: span 2;
+  }
+
+  .gallery-cats {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .site-stage__figure {
     display: none;

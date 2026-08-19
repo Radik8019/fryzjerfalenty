@@ -14,7 +14,7 @@ const bentoConfig: BentoConfig[] = [
   { id: 'ladies-global', icon: 'color', size: 'large' },
   { id: 'ladies-ombre', icon: 'ombre', size: 'small' },
   { id: 'ladies-airtouch', icon: 'balayage', size: 'small' },
-  { id: 'ladies-curly', icon: 'curly', size: 'small' },
+  { id: 'ladies-curly', icon: 'curly', size: 'small', name: { pl: 'Włosy kręcone', en: 'Curly hair' } },
   { id: 'ladies-toning', icon: 'care', size: 'small', name: { pl: 'Tonowanie', en: 'Toning' } },
 ]
 

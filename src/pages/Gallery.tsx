@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { GlowTile } from '../components/gallery/GlowTile'
+import { galleryIconKind, ThemeIcon } from '../components/icons/ThemeIcon'
 import { GALLERY_WORKS_HASH } from '../config/routes'
 import { type GalleryCategory, galleryWorks } from '../data/gallery'
 import { useI18n } from '../hooks/useI18n'
@@ -34,16 +35,16 @@ export function GalleryPage() {
 
   const tiltRef = useTilt3D({ maxAngle: 10, perspective: 600, scale: 1.045, glowShift: 12, easing: 0.08 })
 
-  const iconSrc =
-    filter === 'color' ? '/images/icon-color.png?v=2'
-    : filter === 'cut' ? '/images/icon-cut.png?v=2'
-    : '/images/icon-curly.png?v=2'
-
   return (
     <section className="section">
       <div className="wrap">
         <div className="gallery-hero-icon" ref={tiltRef}>
-          <img key={filter} className="gallery-hero-icon__img tilt3d__subject" src={iconSrc} alt="" />
+          <ThemeIcon
+            key={filter}
+            kind={galleryIconKind(filter)}
+            className="gallery-hero-icon__img"
+            tilt
+          />
         </div>
         <p className="kicker">{t.gallery.kicker}</p>
         <h1 className="display" style={{ fontSize: 'clamp(2.6rem, 6vw, 4.4rem)', marginTop: 10 }}>

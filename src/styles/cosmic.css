@@ -388,11 +388,9 @@ body {
     transform 0.35s var(--ease);
 }
 
-.gallery-cat__icon {
+.gallery-cat__icon.theme-icon {
   flex-shrink: 0;
   width: 72px;
-  height: auto;
-  object-fit: contain;
   pointer-events: none;
   user-select: none;
 }
@@ -552,7 +550,7 @@ body {
     align-items: center;
   }
 
-  .gallery-cat__icon {
+  .gallery-cat__icon.theme-icon {
     position: absolute;
     left: 14px;
     top: 50%;

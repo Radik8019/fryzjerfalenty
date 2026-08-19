@@ -290,18 +290,56 @@
   cursor: default;
 }
 
-.gallery-hero-icon__img {
-  width: clamp(80px, 14vw, 130px);
+.theme-icon {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.theme-icon__img {
+  display: block;
+  width: 100%;
   height: auto;
   object-fit: contain;
   pointer-events: none;
   user-select: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.theme-icon__img--light {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+[data-theme='light'] .theme-icon__img--dark {
+  opacity: 0;
+  visibility: hidden;
+}
+
+[data-theme='light'] .theme-icon__img--light {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-hero-icon__img.theme-icon--tilt,
+.gallery-hero-icon__img.theme-icon {
+  width: clamp(80px, 14vw, 130px);
   will-change: transform, filter;
   transform-style: preserve-3d;
   filter:
     drop-shadow(0 0 14px rgba(194, 158, 93, 0.7))
     drop-shadow(0 0 36px rgba(194, 158, 93, 0.3));
   animation: gallery-icon-in 0.5s ease both;
+}
+
+[data-theme='light'] .gallery-hero-icon__img.theme-icon--tilt,
+[data-theme='light'] .gallery-hero-icon__img.theme-icon {
+  filter:
+    drop-shadow(0 0 12px rgba(160, 120, 60, 0.45))
+    drop-shadow(0 0 28px rgba(160, 120, 60, 0.2));
 }
 
 

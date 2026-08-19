@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import { ServiceBento } from '../components/home/ServiceBento'
+import { ThemeIcon } from '../components/icons/ThemeIcon'
 
 import { ReviewSlider } from '../components/reviews/ReviewSlider'
 
@@ -112,15 +113,15 @@ export function HomePage() {
 
           <div className="gallery-cats">
             <Link className="gallery-cat" to={galleryCategoryHref(path.gallery, 'color')}>
-              <img className="gallery-cat__icon" src="/images/icon-color.png?v=2" alt="" width="231" height="359" />
+              <ThemeIcon kind="color" className="gallery-cat__icon" />
               <span className="gallery-cat__name">{t.gallery.color}</span>
             </Link>
             <Link className="gallery-cat" to={galleryCategoryHref(path.gallery, 'cut')}>
-              <img className="gallery-cat__icon" src="/images/icon-cut.png?v=2" alt="" width="231" height="359" />
+              <ThemeIcon kind="cut" className="gallery-cat__icon" />
               <span className="gallery-cat__name">{t.gallery.cut}</span>
             </Link>
             <Link className="gallery-cat" to={galleryCategoryHref(path.gallery, 'styling')}>
-              <img className="gallery-cat__icon" src="/images/icon-curly.png?v=2" alt="" width="232" height="359" />
+              <ThemeIcon kind="curly" className="gallery-cat__icon" />
               <span className="gallery-cat__name">{t.gallery.styling}</span>
             </Link>
           </div>

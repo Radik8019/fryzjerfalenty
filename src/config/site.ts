@@ -27,7 +27,7 @@ export const site = {
     'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
   splitforms: {
     endpoint: 'https://splitforms.com/api/submit',
-    accessKey: '1ae12afd051c4f59b3cff4fbc42daa56',
+    accessKey: String(import.meta.env.VITE_SPLITFORMS_ACCESS_KEY ?? ''),
   },
 } as const
 

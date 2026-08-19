@@ -123,6 +123,7 @@ body {
   margin-top: calc(var(--header-offset) * -1);
   padding-top: calc(var(--header-offset) + clamp(4px, 1vw, 12px));
   padding-bottom: calc(16px + var(--safe-bottom));
+  overflow-x: clip;
 }
 
 .hero-cosmic__grid {
@@ -323,6 +324,7 @@ body {
   color: var(--text);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  min-width: 0;
 }
 
 .service-bento__detail {

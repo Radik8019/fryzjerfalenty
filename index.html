@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#05070f" />
     <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -20,15 +22,7 @@
     />
     <meta property="og:type" content="website" />
     <title>Radosław Kostiw — Fryzjer Falenty Nowe · Warszawa</title>
-    <script>
-      try {
-        var t = localStorage.getItem('rk-theme-v2') || 'dark'
-        document.documentElement.dataset.theme = t
-        document.documentElement.style.colorScheme = t
-        var m = document.querySelector('meta[name="theme-color"]')
-        if (m) m.setAttribute('content', t === 'dark' ? '#05070f' : '#f5f2ec')
-      } catch (e) {}
-    </script>
+    <script src="%BASE_URL%theme-init.js"></script>
   </head>
   <body>
     <div id="root"></div>

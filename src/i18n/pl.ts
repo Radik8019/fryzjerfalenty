@@ -41,7 +41,7 @@ export const pl = {
   positioning: {
     kicker: 'Prywatne atelier',
     title: 'Nie salon. Gest.',
-    body: 'Szukasz fryzjera, który naprawdę Cię wysłucha? Zadbaj o swoje włosy w wyjątkowej i całkowicie kameralnej atmosferze. Moja przestrzeń jest stworzona z myślą o wszystkich, którzy szukają czegoś więcej niż zwykłej wizyty u fryzjera. Przyjmuję wyłącznie na podstawie wcześniejszej rezerwacji, dzięki czemu całą swoją uwagę i czas poświęcam tylko Tobie. Zapomnij o powtarzalnych schematach z katalogu – każda receptura koloru i technika strzyżenia to unikalna i spersonalizowana kompozycja, tworzona z pasją i precyzją. Znajdziesz mnie w Falentach Nowych, zaledwie kilka minut od Warszawy oraz w Warszawie. Zarezerwuj swój termin już dziś i poczuj różnicę.',
+    body: 'Szukasz fryzjera, który naprawdę Cię wysłucha? Zadbaj o swoje włosy w wyjątkowej i całkowicie kameralnej atmosferze. Moja przestrzeń jest stworzona z myślą o wszystkich, którzy szukają czegoś więcej niż zwykłej wizyty u fryzjera. Przyjmuję wyłącznie na podstawie wcześniejszej rezerwacji, dzięki czemu całą swoją uwagę i czas poświęcam tylko Tobie. Zapomnij o powtarzalnych schematach z katalogu – każda receptura koloru i technika strzyżenia to unikalna i spersonalizowana kompozycja, tworzona z pasją i precyzją. Znajdziesz mnie w Falentach Nowych, zaledwie kilkanaście minut od Warszawy oraz w Warszawie. Zarezerwuj swój termin już dziś i poczuj różnicę.',
   },
   homeGallery: {
     kicker: 'Wybrane prace',

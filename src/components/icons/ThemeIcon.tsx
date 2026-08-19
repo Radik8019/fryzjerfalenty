@@ -2,24 +2,27 @@ import { publicUrl } from '../../config/assets'
 
 export type ThemeIconKind = 'color' | 'cut' | 'curly'
 
-const ICONS: Record<ThemeIconKind, { dark: string; light: string; width: number; height: number }> = {
+const ICONS: Record<
+  ThemeIconKind,
+  { dark: string; light: string; width: number; height: number }
+> = {
   color: {
-    dark: '/images/icon-color.png?v=2',
-    light: '/images/icon-color-light.png?v=1',
-    width: 231,
-    height: 359,
+    dark: '/images/icon-color.webp?v=3',
+    light: '/images/icon-color-light.webp?v=3',
+    width: 354,
+    height: 418,
   },
   cut: {
-    dark: '/images/icon-cut.png?v=2',
-    light: '/images/icon-cut-light.png?v=1',
-    width: 231,
-    height: 359,
+    dark: '/images/icon-cut.webp?v=3',
+    light: '/images/icon-cut-light.webp?v=3',
+    width: 355,
+    height: 381,
   },
   curly: {
-    dark: '/images/icon-curly.png?v=2',
-    light: '/images/icon-curly-light.png?v=1',
-    width: 232,
-    height: 359,
+    dark: '/images/icon-curly.webp?v=3',
+    light: '/images/icon-curly-light.webp?v=3',
+    width: 361,
+    height: 378,
   },
 }
 
@@ -35,23 +38,28 @@ export function ThemeIcon({ kind, className = '', tilt = false }: Props) {
     .filter(Boolean)
     .join(' ')
 
+  const imgProps = {
+    alt: '',
+    draggable: false as const,
+    decoding: 'async' as const,
+    loading: (tilt ? 'eager' : 'lazy') as 'eager' | 'lazy',
+  }
+
   const inner = (
     <>
       <img
         className="theme-icon__img theme-icon__img--dark"
         src={publicUrl(icon.dark)}
-        alt=""
         width={icon.width}
         height={icon.height}
-        draggable={false}
+        {...imgProps}
       />
       <img
         className="theme-icon__img theme-icon__img--light"
         src={publicUrl(icon.light)}
-        alt=""
         width={icon.width}
         height={icon.height}
-        draggable={false}
+        {...imgProps}
       />
     </>
   )

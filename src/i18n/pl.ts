@@ -120,7 +120,7 @@ export const pl = {
     formSubmit: 'Wyślij zapytanie',
     formSending: 'Wysyłanie…',
     formNote: 'Wiadomość trafi bezpośrednio na skrzynkę atelier. Jeśli wolisz, zadzwoń.',
-    sent: 'Dziękuję. Wiadomość doszła — odpowiem osobiście.',
+    sent: 'Dziękuję. Wiadomość wysłana — odpowiem osobiście.',
     formError: 'Nie udało się wysłać. Zadzwoń lub napisz na falenty.hair@wp.pl.',
   },
   legal: {

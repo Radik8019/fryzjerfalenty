@@ -44,20 +44,20 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-silver-pixie',
+    id: 'color-platinum-profile',
 
     category: 'color',
 
-    title: { pl: 'Srebrny pixie', en: 'Silver pixie' },
+    title: { pl: 'Platynowy pixie', en: 'Platinum pixie' },
 
     technique: { pl: 'Koloryzacja', en: 'Colour' },
 
     note: { pl: '', en: '' },
 
-    tone: 'stone',
+    tone: 'ivory',
 
-    image: '/images/gallery/color-silver-pixie.png',
-    focus: '50% 6%',
+    image: '/images/gallery/color-platinum-profile.png',
+    focus: '50% 32%',
 
   },
 
@@ -82,20 +82,20 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-platinum-profile',
+    id: 'color-silver-pixie',
 
     category: 'color',
 
-    title: { pl: 'Platynowy pixie', en: 'Platinum pixie' },
+    title: { pl: 'Srebrny pixie', en: 'Silver pixie' },
 
     technique: { pl: 'Koloryzacja', en: 'Colour' },
 
     note: { pl: '', en: '' },
 
-    tone: 'ivory',
+    tone: 'stone',
 
-    image: '/images/gallery/color-platinum-profile.png',
-    focus: '50% 32%',
+    image: '/images/gallery/color-silver-pixie.png',
+    focus: '50% 6%',
 
   },
 

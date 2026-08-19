@@ -11,7 +11,7 @@ export function AboutPage() {
   return (
     <section className="section">
       <div className="wrap about-grid">
-        <figure className="portrait">
+        <figure className="portrait protect-media">
           <img
             src={publicUrl('/images/about-atelier.png')}
             alt={site.name}
@@ -19,7 +19,10 @@ export function AboutPage() {
             height={1024}
             loading="eager"
             decoding="async"
+            draggable={false}
+            referrerPolicy="strict-origin-when-cross-origin"
           />
+          <span className="media-shield" aria-hidden="true" />
         </figure>
         <div className="about-copy">
           <p className="kicker">{t.about.kicker}</p>

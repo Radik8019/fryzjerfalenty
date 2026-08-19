@@ -132,11 +132,16 @@ export const en: Messages = {
     p2: 'Theme (light/dark) and language may be remembered in the browser (localStorage), solely so the site appears as you left it.',
     p3: 'Client photographs are published only with consent. Until materials are provided, placeholders are used.',
     p4: 'For personal data: Radosław Kostiw, 6/10 Droga Hrabska, Falenty Nowe, tel. +48 666 627 107, falenty.hair@wp.pl.',
-    cookies: 'The Contact page embeds a Google Map. Google may set its own cookies. We do not use advertising cookies or analytics.',
+    cookies: 'We do not use advertising cookies or analytics. Theme and language are stored locally in your browser. The contact form sends your enquiry via Splitforms to falenty.hair@wp.pl. Google Maps opens only after you click through (an external site).',
   },
   footer: {
     rights: 'All rights reserved.',
     privacy: 'Privacy policy',
     instagram: 'Instagram',
+  },
+  cookies: {
+    title: 'Privacy',
+    body: 'We store only theme and language in your browser. We do not use advertising cookies or analytics. Messages from the form go via Splitforms to the atelier inbox.',
+    accept: 'Understood',
   },
 }

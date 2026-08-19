@@ -23,8 +23,6 @@ export const site = {
     pl: 'Droga Hrabska 6/10, Falenty Nowe',
     en: '6/10 Droga Hrabska, Falenty Nowe',
   },
-  mapEmbed:
-    'https://maps.google.com/maps?q=Droga+Hrabska+6%2F10%2C+Falenty+Nowe&hl=pl&z=16&output=embed',
   mapLink:
     'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
   splitforms: {
@@ -32,6 +30,8 @@ export const site = {
     accessKey: '1ae12afd051c4f59b3cff4fbc42daa56',
   },
 } as const
+
+export const turnstileSiteKey = String(import.meta.env.VITE_TURNSTILE_SITE_KEY ?? '')
 
 export const titles = {
   pl: 'Radosław Kostiw — Fryzjer Falenty Nowe · Warszawa',

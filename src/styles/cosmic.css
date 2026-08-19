@@ -152,6 +152,12 @@ body {
   width: min(100%, var(--hero-photo-max-w));
 }
 
+.media-shield {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
 .hero-cosmic__photo {
   position: relative;
   z-index: 1;
@@ -437,7 +443,8 @@ body {
 .cred,
 .glow-tile,
 .chip,
-.map-frame {
+.map-frame,
+.map-card {
   border-color: var(--card-stroke);
 }
 
@@ -445,7 +452,8 @@ body {
 .contact-card,
 .form,
 .legal-prose,
-.cred {
+.cred,
+.map-card {
   background: var(--card-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);

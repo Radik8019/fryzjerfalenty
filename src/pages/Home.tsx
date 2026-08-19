@@ -60,7 +60,7 @@ export function HomePage() {
           </div>
 
           <div className="hero-cosmic__figure" aria-hidden="true">
-            <div className="hero-cosmic__photo-stack">
+            <div className="hero-cosmic__photo-stack protect-media">
               <img
                 className="hero-cosmic__photo"
                 src={publicUrl('/images/hero-atelier-cut.png')}
@@ -69,7 +69,10 @@ export function HomePage() {
                 height={680}
                 loading="eager"
                 decoding="async"
+                draggable={false}
+                referrerPolicy="strict-origin-when-cross-origin"
               />
+              <span className="media-shield" aria-hidden="true" />
             </div>
           </div>
 

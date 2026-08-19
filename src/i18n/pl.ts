@@ -130,12 +130,17 @@ export const pl = {
     p2: 'Motyw (jasny/ciemny) oraz język mogą być zapamiętane w przeglądarce (localStorage), wyłącznie po to, by strona wyglądała tak, jak ją zostawiłaś.',
     p3: 'Zdjęcia klientek publikujemy wyłącznie za zgodą. Do czasu dostarczenia materiałów stosujemy placeholdery.',
     p4: 'W sprawie danych osobowych: Radosław Kostiw, Droga Hrabska 6/10, Falenty Nowe, tel. +48 666 627 107, falenty.hair@wp.pl.',
-    cookies: 'Na stronie Kontakt osadzamy mapę Google. Google może zapisać własne pliki cookies. Nie używamy reklamowych cookies ani analityki.',
+    cookies: 'Nie używamy cookies reklamowych ani analityki. Motyw i język zapisujemy lokalnie w przeglądarce. Formularz kontaktowy przesyła zapytanie przez Splitforms na falenty.hair@wp.pl. Mapa Google otwiera się dopiero po Twoim kliknięciu (zewnętrzna strona).',
   },
   footer: {
     rights: 'Wszelkie prawa zastrzeżone.',
     privacy: 'Polityka prywatności',
     instagram: 'Instagram',
+  },
+  cookies: {
+    title: 'Prywatność',
+    body: 'Zapisujemy tylko motyw i język w Twojej przeglądarce. Nie stosujemy cookies reklamowych ani analityki. Wiadomość z formularza idzie przez Splitforms na skrzynkę atelier.',
+    accept: 'Rozumiem',
   },
 } as const
 

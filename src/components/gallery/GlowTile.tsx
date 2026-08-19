@@ -49,12 +49,17 @@ export function GlowTile({ work }: Props) {
     >
       <span className="glow-tile__media" aria-hidden="true">
         {work.image ? (
-          <img
-            className="glow-tile__photo"
-            src={publicUrl(work.image)}
-            alt=""
-            style={work.focus ? ({ '--photo-focus': work.focus } as CSSProperties) : undefined}
-          />
+          <>
+            <img
+              className="glow-tile__photo"
+              src={publicUrl(work.image)}
+              alt=""
+              draggable={false}
+              referrerPolicy="strict-origin-when-cross-origin"
+              style={work.focus ? ({ '--photo-focus': work.focus } as CSSProperties) : undefined}
+            />
+            <span className="glow-tile__shield" aria-hidden="true" />
+          </>
         ) : null}
       </span>
       <span className="glow-tile__spot" aria-hidden="true" />

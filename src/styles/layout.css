@@ -365,3 +365,37 @@
     align-items: start;
   }
 }
+
+.cookie-notice {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  display: flex;
+  gap: 16px 24px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px var(--page-gutter) calc(16px + var(--safe-bottom));
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.cookie-notice p {
+  margin: 0;
+  max-width: 52rem;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.cookie-notice a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
+.cookie-notice .cta {
+  flex-shrink: 0;
+}

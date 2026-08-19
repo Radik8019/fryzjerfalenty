@@ -1,22 +1,73 @@
-import { useState, type FormEvent } from 'react'
-import { site } from '../config/site'
+import { useEffect, useState, type FormEvent } from 'react'
+import { site, turnstileSiteKey } from '../config/site'
 import { useI18n } from '../hooks/useI18n'
 
 type FormStatus = 'idle' | 'loading' | 'ok' | 'error'
+
+const NAME_MAX = 80
+const EMAIL_MAX = 120
+const PHONE_MAX = 24
+const MESSAGE_MIN = 10
+const MESSAGE_MAX = 2000
 
 export function ContactPage() {
   const { t, locale } = useI18n()
   const [status, setStatus] = useState<FormStatus>('idle')
 
+  useEffect(() => {
+    if (!turnstileSiteKey) return
+    const script = document.createElement('script')
+    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js'
+    script.async = true
+    script.defer = true
+    document.body.appendChild(script)
+    return () => {
+      script.remove()
+    }
+  }, [])
+
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const form = event.currentTarget
-    setStatus('loading')
-
     const payload = new FormData(form)
+
+    if (payload.get('botcheck')) {
+      setStatus('ok')
+      form.reset()
+      return
+    }
+
+    const name = String(payload.get('name') ?? '').trim()
+    const email = String(payload.get('email') ?? '').trim()
+    const phone = String(payload.get('phone') ?? '').trim()
+    const message = String(payload.get('message') ?? '').trim()
+
+    if (
+      name.length < 2 ||
+      name.length > NAME_MAX ||
+      email.length > EMAIL_MAX ||
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+      phone.length > PHONE_MAX ||
+      message.length < MESSAGE_MIN ||
+      message.length > MESSAGE_MAX
+    ) {
+      setStatus('error')
+      return
+    }
+
+    if (turnstileSiteKey && !String(payload.get('cf-turnstile-response') ?? '')) {
+      setStatus('error')
+      return
+    }
+
+    setStatus('loading')
+    payload.set('name', name)
+    payload.set('email', email)
+    payload.set('phone', phone)
+    payload.set('message', message)
     payload.set('access_key', site.splitforms.accessKey)
     payload.set('subject', `${site.name} — zapytanie ze strony`)
-    payload.set('from_name', String(payload.get('name') ?? site.name))
+    payload.set('from_name', name || site.name)
 
     try {
       const response = await fetch(site.splitforms.endpoint, {
@@ -76,44 +127,42 @@ export function ContactPage() {
                 <div>
                   <dt>{t.contact.address}</dt>
                   <dd>
-                    <a href={site.mapLink} target="_blank" rel="noreferrer">
+                    <a href={site.mapLink} target="_blank" rel="noopener noreferrer">
                       {site.address[locale]}
                     </a>
                   </dd>
                 </div>
               </dl>
             </div>
-            <figure className="map-frame">
-              <iframe
-                title={t.contact.map}
-                src={site.mapEmbed}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-              />
-              <a className="map-open" href={site.mapLink} target="_blank" rel="noreferrer">
+            <aside className="map-card">
+              <p className="kicker">{t.contact.map}</p>
+              <p className="map-card__address">{site.address[locale]}</p>
+              <a className="cta" href={site.mapLink} target="_blank" rel="noopener noreferrer">
                 {t.contact.mapOpen}
               </a>
-            </figure>
+            </aside>
           </div>
           <form id="formularz" className="form" onSubmit={onSubmit}>
             <input type="checkbox" name="botcheck" className="hp" tabIndex={-1} autoComplete="off" aria-hidden="true" />
             <label>
               {t.contact.formName}
-              <input name="name" required autoComplete="name" autoCapitalize="words" autoCorrect="off" />
+              <input name="name" required autoComplete="name" autoCapitalize="words" autoCorrect="off" minLength={2} maxLength={NAME_MAX} />
             </label>
             <label>
               {t.contact.formEmail}
-              <input name="email" type="email" required autoComplete="email" />
+              <input name="email" type="email" required autoComplete="email" maxLength={EMAIL_MAX} inputMode="email" />
             </label>
             <label>
               {t.contact.formPhone}
-              <input name="phone" type="tel" autoComplete="tel" />
+              <input name="phone" type="tel" autoComplete="tel" maxLength={PHONE_MAX} inputMode="tel" />
             </label>
             <label>
               {t.contact.formMessage}
-              <textarea name="message" required />
+              <textarea name="message" required minLength={MESSAGE_MIN} maxLength={MESSAGE_MAX} />
             </label>
+            {turnstileSiteKey ? (
+              <div className="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="auto" />
+            ) : null}
             <button className="cta" type="submit" disabled={status === 'loading'}>
               {status === 'loading' ? t.contact.formSending : t.contact.formSubmit}
             </button>

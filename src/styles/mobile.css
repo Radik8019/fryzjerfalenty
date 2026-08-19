@@ -365,6 +365,22 @@
     height: 240px;
   }
 
+  .map-card .cta {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .cookie-notice {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .cookie-notice .cta {
+    width: 100%;
+    min-height: 48px;
+  }
+
   .map-open {
     min-height: 44px;
     display: grid;

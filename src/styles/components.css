@@ -282,6 +282,34 @@
 .glow-tile--copper { --work-bg: linear-gradient(160deg, #e2b08a, #b06a45 52%, #5a3224); }
 .glow-tile--stone { --work-bg: linear-gradient(160deg, #cfc6bb, #8a8178 55%, #3e3834); }
 
+/* Gallery hero icon — single active category icon */
+.gallery-hero-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.gallery-hero-icon__img {
+  width: clamp(80px, 14vw, 130px);
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 0 20px rgba(194, 158, 93, 0.5));
+  animation: gallery-icon-in 0.5s ease both;
+}
+
+@keyframes gallery-icon-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .filters {
   display: flex;
   flex-wrap: wrap;

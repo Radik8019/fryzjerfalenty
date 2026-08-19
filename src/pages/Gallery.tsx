@@ -31,9 +31,17 @@ export function GalleryPage() {
     { id: 'styling', label: t.gallery.styling },
   ]
 
+  const iconSrc =
+    filter === 'color' ? '/images/icon-color.png?v=2'
+    : filter === 'cut' ? '/images/icon-cut.png?v=2'
+    : '/images/icon-curly.png?v=2'
+
   return (
     <section className="section">
       <div className="wrap">
+        <div className="gallery-hero-icon">
+          <img key={filter} className="gallery-hero-icon__img" src={iconSrc} alt="" />
+        </div>
         <p className="kicker">{t.gallery.kicker}</p>
         <h1 className="display" style={{ fontSize: 'clamp(2.6rem, 6vw, 4.4rem)', marginTop: 10 }}>
           {t.gallery.title}

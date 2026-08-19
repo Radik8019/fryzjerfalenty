@@ -548,6 +548,7 @@ body {
     padding: 16px 14px;
     min-width: 0;
     gap: 14px;
+    align-items: center;
   }
 
   .gallery-cat__icon {
@@ -557,6 +558,8 @@ body {
   .gallery-cat__name {
     font-size: clamp(0.92rem, 3.5vw, 1.2rem);
     letter-spacing: 0.06em;
+    flex: 1;
+    text-align: center;
   }
 }
 

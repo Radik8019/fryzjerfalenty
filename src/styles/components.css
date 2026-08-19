@@ -159,19 +159,19 @@
 .glow-tile--photo .glow-tile__media::after,
 .hero-cosmic__photo-stack::after,
 .portrait::after {
-  content: 'R.Kostiw';
+  content: 'R. Kostiw';
   position: absolute;
-  right: 10px;
-  bottom: 8px;
+  right: 12px;
+  bottom: 10px;
   z-index: 3;
-  font-family: var(--font-display);
-  font-size: clamp(0.58rem, 1.15vw, 0.78rem);
-  font-weight: 500;
+  font-family: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+  font-size: clamp(0.72rem, 1.5vw, 1rem);
+  font-weight: 600;
   font-style: italic;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.7);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.72);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.25);
   pointer-events: none;
   user-select: none;
 }

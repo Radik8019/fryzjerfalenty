@@ -352,9 +352,11 @@
   }
 
   .mobile-nav .cta {
-    margin-top: 12px;
+    /* Override shared padding: CTA pill should not be tall */
+    margin-top: 14px;
     justify-self: start;
-    padding-inline: 22px;
+    padding: 0 22px;
+    min-height: 52px;
   }
 
   .footer-grid,

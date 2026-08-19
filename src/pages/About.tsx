@@ -13,7 +13,7 @@ export function AboutPage() {
       <div className="wrap about-grid">
         <figure className="portrait protect-media">
           <img
-            src={publicUrl('/images/about-atelier.png')}
+            src={publicUrl('/images/about-atelier.webp')}
             alt={site.name}
             width={745}
             height={1024}

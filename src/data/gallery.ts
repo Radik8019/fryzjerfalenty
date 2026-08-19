@@ -38,7 +38,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'noir',
 
-    image: '/images/gallery/color-navy-bob.png',
+    image: '/images/gallery/color-navy-bob.webp',
 
   },
 
@@ -56,7 +56,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'ivory',
 
-    image: '/images/gallery/color-platinum-profile.png',
+    image: '/images/gallery/color-platinum-profile.webp',
     focus: '50% 32%',
 
   },
@@ -75,7 +75,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'champagne',
 
-    image: '/images/gallery/color-ash-salon.png',
+    image: '/images/gallery/color-ash-salon.webp',
     focus: '50% 6%',
 
   },
@@ -94,7 +94,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'stone',
 
-    image: '/images/gallery/color-silver-pixie.png',
+    image: '/images/gallery/color-silver-pixie.webp',
     focus: '50% 6%',
 
   },
@@ -113,7 +113,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'espresso',
 
-    image: '/images/gallery/color-teal-nape.png',
+    image: '/images/gallery/color-teal-nape.webp',
     focus: '50% 6%',
 
   },
@@ -132,7 +132,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'copper',
 
-    image: '/images/gallery/color-teal-bob.png',
+    image: '/images/gallery/color-teal-bob.webp',
     focus: '28% 8%',
 
   },
@@ -151,7 +151,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'rose',
 
-    image: '/images/gallery/color-lilac-bob.png',
+    image: '/images/gallery/color-lilac-bob.webp',
     focus: '50% 6%',
 
   },
@@ -170,7 +170,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'espresso',
 
-    image: '/images/gallery/color-burgundy-pixie.png',
+    image: '/images/gallery/color-burgundy-pixie.webp',
     focus: '50% 6%',
 
   },
@@ -189,7 +189,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'copper',
 
-    image: '/images/gallery/color-auburn-nape.png',
+    image: '/images/gallery/color-auburn-nape.webp',
     focus: '50% 6%',
 
   },
@@ -208,7 +208,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'rose',
 
-    image: '/images/gallery/color-peach-pixie.png',
+    image: '/images/gallery/color-peach-pixie.webp',
     focus: '50% 6%',
 
   },
@@ -227,7 +227,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'champagne',
 
-    image: '/images/gallery/color-rose-undercut.png',
+    image: '/images/gallery/color-rose-undercut.webp',
     focus: '50% 6%',
 
   },
@@ -246,7 +246,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'champagne',
 
-    image: '/images/gallery/color-ash-before-after-v2.png',
+    image: '/images/gallery/color-ash-before-after-v2.webp',
     focus: '50% 6%',
 
   },
@@ -265,7 +265,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'noir',
 
-    image: '/images/gallery/cut-asymmetric-profile.png',
+    image: '/images/gallery/cut-asymmetric-profile.webp',
     focus: '50% 6%',
 
   },
@@ -284,7 +284,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'espresso',
 
-    image: '/images/gallery/cut-pixie-fringe.png',
+    image: '/images/gallery/cut-pixie-fringe.webp',
     focus: '50% 6%',
 
   },
@@ -303,7 +303,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'stone',
 
-    image: '/images/gallery/cut-mirror.png',
+    image: '/images/gallery/cut-mirror.webp',
     focus: '50% 6%',
 
   },
@@ -322,7 +322,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'champagne',
 
-    image: '/images/gallery/cut-bowl-fringe.png',
+    image: '/images/gallery/cut-bowl-fringe.webp',
     focus: '50% 6%',
 
   },
@@ -341,7 +341,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'rose',
 
-    image: '/images/gallery/cut-studio-fringe.png',
+    image: '/images/gallery/cut-studio-fringe.webp',
     focus: '50% 6%',
 
   },
@@ -360,7 +360,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'rose',
 
-    image: '/images/gallery/curly-volume.png',
+    image: '/images/gallery/curly-volume.webp',
     focus: '50% 6%',
 
   },
@@ -379,7 +379,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'stone',
 
-    image: '/images/gallery/curly-pattern.png',
+    image: '/images/gallery/curly-pattern.webp',
     focus: '50% 6%',
 
   },
@@ -398,7 +398,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'espresso',
 
-    image: '/images/gallery/curly-mohawk.png',
+    image: '/images/gallery/curly-mohawk.webp',
     focus: '50% 6%',
 
   },
@@ -417,7 +417,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'noir',
 
-    image: '/images/gallery/curly-shag.png',
+    image: '/images/gallery/curly-shag.webp',
     focus: '50% 6%',
 
   },
@@ -436,7 +436,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'espresso',
 
-    image: '/images/gallery/curly-salon-front.png',
+    image: '/images/gallery/curly-salon-front.webp',
     focus: '50% 6%',
 
   },
@@ -455,7 +455,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'copper',
 
-    image: '/images/gallery/curly-nape-salon-portrait.png',
+    image: '/images/gallery/curly-nape-salon-portrait.webp',
     focus: '50% 6%',
 
   },
@@ -474,7 +474,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'champagne',
 
-    image: '/images/gallery/curly-portrait-denim.png',
+    image: '/images/gallery/curly-portrait-denim.webp',
     focus: '50% 6%',
 
   },
@@ -493,7 +493,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'rose',
 
-    image: '/images/gallery/curly-stripe-portrait.png',
+    image: '/images/gallery/curly-stripe-portrait.webp',
     focus: '50% 6%',
 
   },
@@ -512,7 +512,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'stone',
 
-    image: '/images/gallery/curly-stripe-profile.png',
+    image: '/images/gallery/curly-stripe-profile.webp',
     focus: '50% 6%',
 
   },

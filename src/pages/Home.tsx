@@ -63,7 +63,7 @@ export function HomePage() {
             <div className="hero-cosmic__photo-stack protect-media">
               <img
                 className="hero-cosmic__photo"
-                src={publicUrl('/images/hero-atelier-cut.png')}
+                src={publicUrl('/images/hero-atelier-cut.webp')}
                 alt=""
                 width={1024}
                 height={680}

@@ -54,6 +54,8 @@ export function GlowTile({ work }: Props) {
               className="glow-tile__photo"
               src={publicUrl(work.image)}
               alt=""
+              loading="lazy"
+              decoding="async"
               draggable={false}
               referrerPolicy="strict-origin-when-cross-origin"
               style={work.focus ? ({ '--photo-focus': work.focus } as CSSProperties) : undefined}

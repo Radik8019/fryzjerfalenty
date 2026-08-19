@@ -749,6 +749,8 @@
   border-radius: var(--radius);
   background: var(--card-bg);
   text-align: center;
+  /* Prevent CTA glow/shimmer from bleeding into the next tile */
+  overflow: hidden;
 }
 
 .map-card__address {

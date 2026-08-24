@@ -10,7 +10,6 @@ type FormStatus = 'idle' | 'loading' | 'ok' | 'error'
 const NAME_MAX = 80
 const EMAIL_MAX = 120
 const PHONE_MAX = 24
-const MESSAGE_MIN = 10
 const MESSAGE_MAX = 2000
 
 export function ContactPage() {
@@ -50,8 +49,8 @@ export function ContactPage() {
       name.length > NAME_MAX ||
       email.length > EMAIL_MAX ||
       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+      phone.length < 5 ||
       phone.length > PHONE_MAX ||
-      message.length < MESSAGE_MIN ||
       message.length > MESSAGE_MAX
     ) {
       setStatus('error')
@@ -159,11 +158,11 @@ export function ContactPage() {
             </label>
             <label>
               {t.contact.formPhone}
-              <input name="phone" type="tel" autoComplete="tel" maxLength={PHONE_MAX} inputMode="tel" />
+              <input name="phone" type="tel" required autoComplete="tel" maxLength={PHONE_MAX} inputMode="tel" />
             </label>
             <label>
               {t.contact.formMessage}
-              <textarea name="message" required minLength={MESSAGE_MIN} maxLength={MESSAGE_MAX} />
+              <textarea name="message" maxLength={MESSAGE_MAX} />
             </label>
             {turnstileSiteKey ? (
               <div className="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="auto" />

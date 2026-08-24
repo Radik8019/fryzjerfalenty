@@ -323,7 +323,7 @@ export const galleryWorks: GalleryWork[] = [
 
     category: 'cut',
 
-    title: { pl: 'Cięcie asymetryczne', en: 'Asymmetric cut' },
+    title: { pl: 'Cięcie asymetryczne', en: 'Asymmetrical cut' },
 
     technique: { pl: 'Strzyżenie', en: 'Cut' },
 
@@ -551,7 +551,7 @@ export const galleryWorks: GalleryWork[] = [
 
     category: 'styling',
 
-    title: { pl: 'Kręcone — objętość twarzy', en: 'Curls — face volume' },
+    title: { pl: 'Kręcone — objętość twarzy', en: 'Curls — face-framing volume' },
 
     technique: { pl: 'Włosy kręcone', en: 'Curly hair' },
 

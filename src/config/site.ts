@@ -21,7 +21,7 @@ export const site = {
   },
   address: {
     pl: 'Droga Hrabska 6/10, Falenty Nowe',
-    en: '6/10 Droga Hrabska, Falenty Nowe',
+    en: 'Droga Hrabska 6/10, Falenty Nowe',
   },
   mapLink:
     'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
@@ -29,7 +29,7 @@ export const site = {
     {
       address: {
         pl: 'Droga Hrabska 6/10, Falenty Nowe',
-        en: '6/10 Droga Hrabska, Falenty Nowe',
+        en: 'Droga Hrabska 6/10, Falenty Nowe',
       },
       mapLink:
         'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
@@ -37,7 +37,7 @@ export const site = {
     {
       address: {
         pl: 'ul. Mokotowska 65/5, Warszawa',
-        en: '65/5 Mokotowska Street, Warsaw',
+        en: 'Mokotowska 65/5, Warsaw',
       },
       mapLink:
         'https://www.google.com/maps/search/?api=1&query=ul.+Mokotowska+65%2F5%2C+Warszawa',
@@ -58,5 +58,5 @@ export const titles = {
 
 export const descriptions = {
   pl: 'Prywatne atelier haute coiffure Radosława Kostiwa. Koloryzacja, cięcie i stylizacja dla kobiet, które nie godzą się na kompromis. Falenty Nowe · Warszawa.',
-  en: 'The private haute coiffure atelier of Radosław Kostiw. Colour, cut and styling for women who do not compromise. Falenty Nowe · Warsaw.',
+  en: 'The private haute coiffure atelier of Radosław Kostiw. Colour, cut and styling for women who refuse to compromise. Falenty Nowe · Warsaw.',
 } as const

@@ -136,6 +136,7 @@ export const pl = {
     rights: 'Wszelkie prawa zastrzeżone.',
     privacy: 'Polityka prywatności',
     instagram: 'Instagram',
+    nav: 'Stopka',
   },
   cookies: {
     title: 'Prywatność',

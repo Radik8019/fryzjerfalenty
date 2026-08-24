@@ -13,13 +13,18 @@ export function Footer() {
     <footer className="site-footer">
       <div className="wrap">
         <div className="footer-grid">
-          <div>
+          <div className="footer-brand">
             <BrandLockup />
-            <p className="lead" style={{ marginTop: 16 }}>
-              {site.address[locale]} · {site.hours[locale]}
-            </p>
+            <address className="footer-address">
+              {site.locations.map((location) => (
+                <span key={location.mapLink} className="footer-address__line">
+                  {location.address[locale]}
+                </span>
+              ))}
+              <span className="footer-address__line">{site.hours[locale]}</span>
+            </address>
           </div>
-          <nav className="footer-nav" aria-label="Footer">
+          <nav className="footer-nav" aria-label={t.footer.nav}>
             <Link to={path.gallery}>{t.nav.gallery}</Link>
             <Link to={path.about}>{t.nav.about}</Link>
             <Link to={path.services}>{t.nav.services}</Link>

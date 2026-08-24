@@ -138,6 +138,7 @@ export const en: Messages = {
     rights: 'All rights reserved.',
     privacy: 'Privacy policy',
     instagram: 'Instagram',
+    nav: 'Footer',
   },
   cookies: {
     title: 'Privacy',

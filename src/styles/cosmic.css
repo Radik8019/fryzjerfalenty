@@ -419,6 +419,7 @@ body {
 .gallery-cat__icon.theme-icon {
   flex-shrink: 0;
   width: 72px;
+  aspect-ratio: 1 / 1;
   pointer-events: none;
   user-select: none;
 }
@@ -584,6 +585,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     width: 56px;
+    aspect-ratio: 1 / 1;
   }
 
   .gallery-cat__name {

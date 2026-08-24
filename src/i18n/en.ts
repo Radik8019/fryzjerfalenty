@@ -66,7 +66,7 @@ export const en: Messages = {
   gallery: {
     kicker: 'Portfolio',
     title: 'Gallery',
-    lead: 'Selected compositions of colour, cut and form. Final photographs will occupy these same frames.',
+    lead: 'Selected compositions of colour, cut and curly form.',
     all: 'All',
     color: 'Colouring',
     cut: 'Haircuts',

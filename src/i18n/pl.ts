@@ -64,7 +64,7 @@ export const pl = {
   gallery: {
     kicker: 'Portfolio',
     title: 'Galeria prac',
-    lead: 'Wybrane kompozycje koloru, cięcia i formy. Zdjęcia docelowe pojawią się w tych samych ramach.',
+    lead: 'Wybrane kompozycje koloru, cięcia i kręconej formy.',
     all: 'Wszystkie',
     color: 'Koloryzacje',
     cut: 'Strzyżenia',

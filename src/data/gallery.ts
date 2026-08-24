@@ -44,6 +44,28 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
+    id: 'color-caramel-bob',
+
+    category: 'color',
+
+    title: { pl: 'Karmelowy bob', en: 'Caramel bob' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/color-caramel-bob.webp',
+
+    focus: '50% 42%',
+
+    fit: 'contain',
+
+  },
+
+  {
+
     id: 'color-platinum-profile',
 
     category: 'color',

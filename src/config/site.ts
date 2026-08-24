@@ -25,6 +25,24 @@ export const site = {
   },
   mapLink:
     'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
+  locations: [
+    {
+      address: {
+        pl: 'Droga Hrabska 6/10, Falenty Nowe',
+        en: '6/10 Droga Hrabska, Falenty Nowe',
+      },
+      mapLink:
+        'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
+    },
+    {
+      address: {
+        pl: 'ul. Mokotowska 65/5, Warszawa',
+        en: '65/5 Mokotowska Street, Warsaw',
+      },
+      mapLink:
+        'https://www.google.com/maps/search/?api=1&query=ul.+Mokotowska+65%2F5%2C+Warszawa',
+    },
+  ],
   splitforms: {
     endpoint: 'https://splitforms.com/api/submit',
     accessKey: String(import.meta.env.VITE_SPLITFORMS_ACCESS_KEY ?? ''),

@@ -1,4 +1,5 @@
 import { useEffect, useState, type FormEvent } from 'react'
+import { RotatingAddress } from '../components/contact/RotatingAddress'
 import { site, turnstileSiteKey } from '../config/site'
 import { useI18n } from '../hooks/useI18n'
 
@@ -135,9 +136,7 @@ export function ContactPage() {
                 <div>
                   <dt>{t.contact.address}</dt>
                   <dd>
-                    <a href={site.mapLink} target="_blank" rel="noopener noreferrer">
-                      {site.address[locale]}
-                    </a>
+                    <RotatingAddress />
                   </dd>
                 </div>
               </dl>

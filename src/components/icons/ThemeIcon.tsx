@@ -4,7 +4,7 @@ export type ThemeIconKind = 'color' | 'cut' | 'curly'
 
 const ICONS: Record<ThemeIconKind, { src: string; width: number; height: number }> = {
   color: {
-    src: '/images/icon-color.webp?v=8',
+    src: '/images/icon-color.webp?v=9',
     width: 400,
     height: 459,
   },
@@ -28,7 +28,12 @@ type Props = {
 
 export function ThemeIcon({ kind, className = '', tilt = false }: Props) {
   const icon = ICONS[kind]
-  const wrapperClass = ['theme-icon', className, tilt ? 'theme-icon--tilt tilt3d__subject' : '']
+  const wrapperClass = [
+    'theme-icon',
+    `theme-icon--${kind}`,
+    className,
+    tilt ? 'theme-icon--tilt tilt3d__subject' : '',
+  ]
     .filter(Boolean)
     .join(' ')
 

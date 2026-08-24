@@ -286,7 +286,10 @@
 .gallery-hero-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto 12px;
+  padding: 28px 20px;
+  overflow: visible;
   cursor: default;
 }
 
@@ -295,6 +298,7 @@
   display: inline-block;
   flex-shrink: 0;
   line-height: 0;
+  overflow: visible;
 }
 
 .theme-icon__img {
@@ -315,6 +319,12 @@
     drop-shadow(0 0 14px rgba(194, 158, 93, 0.7))
     drop-shadow(0 0 36px rgba(194, 158, 93, 0.3));
   animation: gallery-icon-in 0.5s ease both;
+  overflow: visible;
+}
+
+/* Lion only: larger display box so it matches scissors while keeping full artwork + glow */
+.gallery-hero-icon__img.theme-icon--color {
+  width: clamp(96px, 17vw, 156px);
 }
 
 [data-theme='light'] .gallery-hero-icon__img.theme-icon--tilt,

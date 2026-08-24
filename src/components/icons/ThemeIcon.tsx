@@ -2,22 +2,21 @@ import { publicUrl } from '../../config/assets'
 
 export type ThemeIconKind = 'color' | 'cut' | 'curly'
 
-/** All category icons share one square canvas so Home + Gallery render at equal size. */
 const ICONS: Record<ThemeIconKind, { src: string; width: number; height: number }> = {
   color: {
-    src: '/images/icon-color.webp?v=7',
+    src: '/images/icon-color.webp?v=6',
     width: 400,
-    height: 400,
+    height: 461,
   },
   cut: {
-    src: '/images/icon-cut.webp?v=7',
+    src: '/images/icon-cut.webp?v=5',
     width: 400,
-    height: 400,
+    height: 459,
   },
   curly: {
-    src: '/images/icon-curly.webp?v=7',
+    src: '/images/icon-curly.webp?v=5',
     width: 400,
-    height: 400,
+    height: 429,
   },
 }
 

@@ -188,8 +188,9 @@ body {
 }
 
 .hero-cosmic__copy .kicker {
-  letter-spacing: 0.32em;
-  font-size: clamp(0.62rem, 0.9vw, 0.72rem);
+  letter-spacing: 0.24em;
+  font-size: clamp(0.8rem, 0.58rem + 0.55vw, 0.94rem);
+  line-height: 1.4;
 }
 
 .hero-cosmic__copy .brand-name {
@@ -204,10 +205,13 @@ body {
 .hero-cosmic__copy .brand-tag {
   display: block;
   margin-top: 10px;
-  font-size: clamp(0.62rem, 0.85vw, 0.68rem);
-  letter-spacing: 0.28em;
+  font-size: clamp(0.76rem, 0.56rem + 0.5vw, 0.9rem);
+  letter-spacing: 0.2em;
+  line-height: 1.45;
   text-transform: uppercase;
   color: var(--accent-strong);
+  white-space: normal;
+  max-width: 100%;
 }
 
 .hero-cosmic__copy .hero-lead {
@@ -242,6 +246,30 @@ body {
 
   .hero-cosmic__copy .hero-lead {
     max-width: 32rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-cosmic__copy .kicker {
+    font-size: clamp(0.78rem, 2.35vw, 0.88rem);
+    letter-spacing: 0.16em;
+  }
+
+  .hero-cosmic__copy .brand-tag {
+    margin-top: 8px;
+    font-size: clamp(0.74rem, 2.15vw, 0.84rem);
+    letter-spacing: 0.12em;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-cosmic__copy .kicker {
+    letter-spacing: 0.12em;
+  }
+
+  .hero-cosmic__copy .brand-tag {
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
   }
 }
 

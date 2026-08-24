@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from '
 import { site } from '../../config/site'
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion'
 
-const INTERVAL_MS = 3000
+const INTERVAL_MS = 4000
 
 type Location = (typeof site.locations)[number]
 

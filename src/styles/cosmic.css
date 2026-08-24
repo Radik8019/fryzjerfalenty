@@ -425,7 +425,7 @@ body {
 }
 
 .gallery-cat__icon.theme-icon--color {
-  width: 86px;
+  width: 79.2px; /* +10% vs 72px — full artwork, no crop */
 }
 
 .gallery-cat__name {
@@ -592,7 +592,7 @@ body {
   }
 
   .gallery-cat__icon.theme-icon--color {
-    width: 68px;
+    width: 61.6px; /* +10% vs 56px */
   }
 
   .gallery-cat__name {

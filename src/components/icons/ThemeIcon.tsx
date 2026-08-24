@@ -4,7 +4,7 @@ export type ThemeIconKind = 'color' | 'cut' | 'curly'
 
 const ICONS: Record<ThemeIconKind, { src: string; width: number; height: number }> = {
   color: {
-    src: '/images/icon-color.webp?v=9',
+    src: '/images/icon-color.webp?v=10',
     width: 400,
     height: 459,
   },

@@ -44,72 +44,6 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-caramel-bob',
-
-    category: 'color',
-
-    title: { pl: 'Karmelowy bob', en: 'Caramel bob' },
-
-    technique: { pl: 'Koloryzacja', en: 'Colour' },
-
-    note: { pl: '', en: '' },
-
-    tone: 'champagne',
-
-    image: '/images/gallery/color-caramel-bob.webp',
-
-    focus: '50% 42%',
-
-    fit: 'contain',
-
-  },
-
-  {
-
-    id: 'color-crimson-bob',
-
-    category: 'color',
-
-    title: { pl: 'Karmazynowy bob', en: 'Crimson bob' },
-
-    technique: { pl: 'Koloryzacja', en: 'Colour' },
-
-    note: { pl: '', en: '' },
-
-    tone: 'noir',
-
-    image: '/images/gallery/color-crimson-bob.webp',
-
-    focus: '50% 38%',
-
-    fit: 'contain',
-
-  },
-
-  {
-
-    id: 'color-scarlet-bob',
-
-    category: 'color',
-
-    title: { pl: 'Szkarłatny bob', en: 'Scarlet bob' },
-
-    technique: { pl: 'Koloryzacja', en: 'Colour' },
-
-    note: { pl: '', en: '' },
-
-    tone: 'noir',
-
-    image: '/images/gallery/color-scarlet-bob.webp',
-
-    focus: '50% 35%',
-
-    fit: 'contain',
-
-  },
-
-  {
-
     id: 'color-platinum-profile',
 
     category: 'color',
@@ -314,6 +248,72 @@ export const galleryWorks: GalleryWork[] = [
 
     image: '/images/gallery/color-ash-before-after-v2.webp',
     focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'color-caramel-bob',
+
+    category: 'color',
+
+    title: { pl: 'Karmelowy bob', en: 'Caramel bob' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/color-caramel-bob.webp',
+
+    focus: '50% 42%',
+
+    fit: 'contain',
+
+  },
+
+  {
+
+    id: 'color-crimson-bob',
+
+    category: 'color',
+
+    title: { pl: 'Karmazynowy bob', en: 'Crimson bob' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'noir',
+
+    image: '/images/gallery/color-crimson-bob.webp',
+
+    focus: '50% 38%',
+
+    fit: 'contain',
+
+  },
+
+  {
+
+    id: 'color-scarlet-bob',
+
+    category: 'color',
+
+    title: { pl: 'Szkarłatny bob', en: 'Scarlet bob' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'noir',
+
+    image: '/images/gallery/color-scarlet-bob.webp',
+
+    focus: '50% 35%',
+
+    fit: 'contain',
 
   },
 

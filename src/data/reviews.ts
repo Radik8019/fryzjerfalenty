@@ -59,7 +59,7 @@ export const reviews: Review[] = [
     name: 'Natalia',
     initial: 'N',
     featured: true,
-    service: { pl: 'Pielęgnacja włosów kręconych', en: 'Curly hair care' },
+    service: { pl: 'Koloryzacja i strzyżenie', en: 'Colour and cut' },
     quote: {
       pl: 'Od lat Radek opiekuje się moimi kręconymi włosami i nigdy wcześniej nie były tak zdrowe, zadbane i szczęśliwe. Polecam !',
       en: 'For years Radek has been looking after my curly hair, and never before has it been so healthy, well cared for and happy. I recommend him!',
@@ -70,7 +70,7 @@ export const reviews: Review[] = [
     name: 'Agnieszka',
     initial: 'A',
     featured: true,
-    service: { pl: 'Doradztwo', en: 'Consultation' },
+    service: { pl: 'Koloryzacja i strzyżenie', en: 'Colour and cut' },
     quote: {
       pl: 'Zdecydowanie polecam Radka! To fryzjer, który przede wszystkim naprawdę słucha swojego klienta i potrafi doskonale wsłuchać się w jego potrzeby oraz oczekiwania. Nie tylko wykonuje usługę, ale przede wszystkim potrafi doradzić i znaleźć rozwiązanie, które rzeczywiście pasuje do danej osoby.',
       en: 'I definitely recommend Radek! He is a hairdresser who truly listens to his clients and is excellent at understanding their needs and expectations. He does not just perform a service — above all, he can advise and find a solution that really suits the person.',

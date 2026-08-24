@@ -2,27 +2,21 @@ import { publicUrl } from '../../config/assets'
 
 export type ThemeIconKind = 'color' | 'cut' | 'curly'
 
-const ICONS: Record<
-  ThemeIconKind,
-  { dark: string; light: string; width: number; height: number }
-> = {
+const ICONS: Record<ThemeIconKind, { src: string; width: number; height: number }> = {
   color: {
-    dark: '/images/icon-color.webp?v=3',
-    light: '/images/icon-color-light.webp?v=3',
-    width: 354,
-    height: 418,
+    src: '/images/icon-color.webp?v=5',
+    width: 400,
+    height: 594,
   },
   cut: {
-    dark: '/images/icon-cut.webp?v=3',
-    light: '/images/icon-cut-light.webp?v=4',
-    width: 355,
-    height: 381,
+    src: '/images/icon-cut.webp?v=5',
+    width: 400,
+    height: 459,
   },
   curly: {
-    dark: '/images/icon-curly.webp?v=3',
-    light: '/images/icon-curly-light.webp?v=4',
-    width: 361,
-    height: 378,
+    src: '/images/icon-curly.webp?v=5',
+    width: 400,
+    height: 429,
   },
 }
 
@@ -38,37 +32,24 @@ export function ThemeIcon({ kind, className = '', tilt = false }: Props) {
     .filter(Boolean)
     .join(' ')
 
-  const imgProps = {
-    alt: '',
-    draggable: false as const,
-    decoding: 'async' as const,
-    loading: (tilt ? 'eager' : 'lazy') as 'eager' | 'lazy',
-  }
-
-  const inner = (
-    <>
-      <img
-        className="theme-icon__img theme-icon__img--dark"
-        src={publicUrl(icon.dark)}
-        width={icon.width}
-        height={icon.height}
-        {...imgProps}
-      />
-      <img
-        className="theme-icon__img theme-icon__img--light"
-        src={publicUrl(icon.light)}
-        width={icon.width}
-        height={icon.height}
-        {...imgProps}
-      />
-    </>
+  const img = (
+    <img
+      className="theme-icon__img"
+      src={publicUrl(icon.src)}
+      width={icon.width}
+      height={icon.height}
+      alt=""
+      draggable={false}
+      decoding="async"
+      loading={tilt ? 'eager' : 'lazy'}
+    />
   )
 
   if (tilt) {
-    return <div className={wrapperClass}>{inner}</div>
+    return <div className={wrapperClass}>{img}</div>
   }
 
-  return <span className={wrapperClass}>{inner}</span>
+  return <span className={wrapperClass}>{img}</span>
 }
 
 export function galleryIconKind(filter: 'color' | 'cut' | 'styling'): ThemeIconKind {

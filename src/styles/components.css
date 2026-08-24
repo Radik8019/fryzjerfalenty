@@ -304,24 +304,6 @@
   object-fit: contain;
   pointer-events: none;
   user-select: none;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-
-.theme-icon__img--light {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-[data-theme='light'] .theme-icon__img--dark {
-  opacity: 0;
-  visibility: hidden;
-}
-
-[data-theme='light'] .theme-icon__img--light {
-  opacity: 1;
-  visibility: visible;
 }
 
 .gallery-hero-icon__img.theme-icon--tilt,

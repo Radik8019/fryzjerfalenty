@@ -288,7 +288,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto 12px;
-  padding: 36px 28px;
+  padding: 40px 32px;
   overflow: visible;
   cursor: default;
 }
@@ -322,9 +322,9 @@
   overflow: visible;
 }
 
-/* Lion only: exactly +10% vs other category icons; padding keeps glow unclipped */
+/* Lion only: exactly +10% of the shared hero size; overflow/padding prevent clipping */
 .gallery-hero-icon__img.theme-icon--color {
-  width: clamp(88px, 15.4vw, 143px); /* +10% vs clamp(80px, 14vw, 130px) */
+  width: calc(clamp(80px, 14vw, 130px) * 1.1);
 }
 
 [data-theme='light'] .gallery-hero-icon__img.theme-icon--tilt,

@@ -401,7 +401,7 @@ body {
   align-items: center;
   gap: 20px;
   min-height: 132px;
-  padding: 18px 28px;
+  padding: 22px 28px;
   border-radius: var(--radius);
   border: 1px solid var(--card-stroke);
   background: var(--card-bg);
@@ -425,7 +425,8 @@ body {
 }
 
 .gallery-cat__icon.theme-icon--color {
-  width: 79.2px; /* +10% vs 72px — full artwork, no crop */
+  /* Exactly +10% vs sibling icons; asset fills ~98% so subject is truly larger */
+  width: calc(72px * 1.1);
 }
 
 .gallery-cat__name {
@@ -592,7 +593,7 @@ body {
   }
 
   .gallery-cat__icon.theme-icon--color {
-    width: 61.6px; /* +10% vs 56px */
+    width: calc(56px * 1.1); /* exactly +10% vs 56px */
   }
 
   .gallery-cat__name {

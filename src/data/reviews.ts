@@ -1,11 +1,4 @@
-export type ReviewId =
-  | 'marzena'
-  | 'aga'
-  | 'julia'
-  | 'kaska'
-  | 'karolina'
-  | 'malgosia'
-  | 'katarzyna'
+export type ReviewId = 'ania' | 'basia' | 'wiki' | 'ania77'
 
 export type Review = {
   id: ReviewId
@@ -18,77 +11,47 @@ export type Review = {
 
 export const reviews: Review[] = [
   {
-    id: 'marzena',
-    name: 'Marzena',
-    initial: 'M',
-    featured: true,
-    service: { pl: 'Koloryzacja', en: 'Colour' },
-    quote: {
-      pl: 'Chodzę do Ciebie już pięć lat. Za każdym razem znajdziesz coś, co pasuje do mnie i do pory roku. Włosy układają się naturalnie. Czuję się tu spokojnie i zaopiekowana.',
-      en: 'I have been coming to you for five years. Each time you find something that suits me — and the season. My hair falls naturally. I leave feeling calm and looked after.',
-    },
-  },
-  {
-    id: 'aga',
-    name: 'Aga',
+    id: 'ania',
+    name: 'Ania',
     initial: 'A',
     featured: true,
-    service: { pl: 'Cięcie', en: 'Cut' },
+    service: { pl: 'Stylizacja', en: 'Styling' },
     quote: {
-      pl: 'Lubię cięcia Radka. Od sześciu lat wychodzę z poczuciem, że fryzura jest naprawdę moja. Słucha i dopasowuje — nic na siłę. Z każdej z nas wydobywa to, co jej służy.',
-      en: 'I like Radek’s cuts. For six years I have left feeling the hair is truly mine. He listens and adjusts — nothing forced. He draws out what suits each of us.',
+      pl: 'Super przemiły człowiek z poczuciem humoru. Zna się doskonale na tym, co robi i z przyjemnością doradzi. Wie, jak zadbać o włosy oraz klienta. Bardzo polecam',
+      en: 'A wonderfully warm person with a sense of humour. He knows his craft inside out and advises with pleasure. He knows how to care for both hair and client. Highly recommended',
     },
   },
   {
-    id: 'julia',
-    name: 'Julia',
-    initial: 'J',
+    id: 'basia',
+    name: 'Basia',
+    initial: 'B',
+    featured: true,
+    service: { pl: 'Strzyżenie', en: 'Cut' },
+    quote: {
+      pl: 'Dzień dobry. Chciałam podziękować za świetne strzyżenie.Włosy układają się same i czuję się w nich bardzo komfortowo. Pozdrowienia dla Pana Radka.',
+      en: 'Good morning. I wanted to thank you for a wonderful cut. My hair falls into place on its own and I feel very comfortable with it. Regards to Mr Radek.',
+    },
+  },
+  {
+    id: 'wiki',
+    name: 'Wiki',
+    initial: 'W',
     featured: true,
     service: { pl: 'Metamorfoza', en: 'Transformation' },
     quote: {
-      pl: 'Lubię, że każda wizyta jest inna. Radek nie powtarza tego samego schematu. Wychodzę spokojniejsza i z fryzurą, która po prostu do mnie pasuje.',
-      en: 'I like that every visit is different. Radek does not repeat the same formula. I leave calmer, with a cut that simply belongs to me.',
+      pl: 'Nowy rok i mam nową fryzurę.Radku,u Ciebie zawsze można liczyć na pozytywną zmianę.Czuję się świetnie w nowej odsłonie.Dzięki Ci za te pozytywne wibracje na mej głowie :)',
+      en: 'New year and a new hairstyle. Radek, with you I can always count on a positive change. I feel great in this new look. Thank you for those positive vibes on my head :)',
     },
   },
   {
-    id: 'kaska',
-    name: 'Kaśka',
-    initial: 'K',
+    id: 'ania77',
+    name: 'ania77',
+    initial: 'A',
     featured: true,
-    service: { pl: 'Metamorfoza', en: 'Transformation' },
-    quote: {
-      pl: 'Zmiana, którą zrobił, naprawdę mi służy. Kolor i cięcie wyszły tak, jak potrzebowałam. Wracam, bo jest spokojnie i czuję się zaopiekowana.',
-      en: 'The change he made really suits me. Colour and cut came out just as I needed. I come back because it is quiet here, and I feel looked after.',
-    },
-  },
-  {
-    id: 'karolina',
-    name: 'Karolina',
-    initial: 'K',
     service: { pl: 'Koloryzacja i strzyżenie', en: 'Colour and cut' },
     quote: {
-      pl: 'Zależało mi, żeby dobrze wyglądać. Nie zawiodłam się. Pan Radek spełnił oczekiwania zarówno względem koloru, jak i perfekcyjnego strzyżenia.',
-      en: 'I needed to look myself. I was not disappointed. Mr Kostiw met every expectation: the colour, and a perfect cut.',
-    },
-  },
-  {
-    id: 'malgosia',
-    name: 'Małgosia W.',
-    initial: 'M',
-    service: { pl: 'Cięcie klasyczne', en: 'Classic cut' },
-    quote: {
-      pl: 'Zostałam potraktowana super indywidualnie. Rzadko zdarza się taki stylista. Mam śliczną klasyczną fryzurę — dokładnie taką, jakiej potrzebowałam. Kolor również piękny. Nigdy nie czułam się lepiej po wizycie u fryzjera.',
-      en: 'I was treated with true individuality. Such a stylist is rare. I have a beautiful classic cut — exactly what I needed. The colour, too, is exquisite. I have never felt better after a salon visit.',
-    },
-  },
-  {
-    id: 'katarzyna',
-    name: 'Katarzyna',
-    initial: 'K',
-    service: { pl: 'Włosy kręcone', en: 'Curly hair' },
-    quote: {
-      pl: 'Ujarzmił moje kręcone włosy tak, że mogę pozwolić sobie zarówno na naturalne, jak i proste. Strzyżenie wręcz idealne. Z włosów robi dzieło sztuki dopasowane do osobowości i trybu życia.',
-      en: 'He tamed my curls so that I can wear them natural or straight. The cut is simply ideal. From hair he makes a work of art, matched to personality and the way one lives.',
+      pl: 'Miałam ochotę na zmianę wizerunku i Radek poradził sobie doskonale.Mam nową bardzo dobrze układającą się fryzurę,oraz super kolor.Fajny facet przy okazji :) Dzięki i pozdrawiam.Do zobaczenia wkrótce.',
+      en: 'I felt like a change of image and Radek handled it perfectly. I have a new hairstyle that falls beautifully, and a superb colour. A nice guy too :) Thanks and regards. See you soon.',
     },
   },
 ]

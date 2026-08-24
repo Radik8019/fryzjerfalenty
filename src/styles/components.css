@@ -757,7 +757,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .rotating-address__link {
+  .rotating-address__link,
+  .rotating-address__text {
     animation: rotating-address-in 0.45s ease;
   }
 }

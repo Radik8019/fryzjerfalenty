@@ -1,5 +1,7 @@
 import { useEffect, useState, type FormEvent } from 'react'
+import { MapLocationCard } from '../components/contact/MapLocationCard'
 import { RotatingAddress } from '../components/contact/RotatingAddress'
+import { RotatingLocationProvider } from '../components/contact/RotatingLocationContext'
 import { site, turnstileSiteKey } from '../config/site'
 import { useI18n } from '../hooks/useI18n'
 
@@ -111,43 +113,39 @@ export function ContactPage() {
         </p>
         <div className="contact-grid">
           <div>
-            <div className="contact-card">
-              <p className="kicker">{site.name}</p>
-              <p className="brand-tag" style={{ marginTop: 8 }}>
-                {site.tagline[locale]}
-              </p>
-              <dl>
-                <div>
-                  <dt>{t.contact.phone}</dt>
-                  <dd>
-                    <a href={site.phoneHref}>{site.phone}</a>
-                  </dd>
-                </div>
-                <div>
-                  <dt>{t.contact.email}</dt>
-                  <dd>
-                    <a href={site.emailHref}>{site.email}</a>
-                  </dd>
-                </div>
-                <div>
-                  <dt>{t.contact.hours}</dt>
-                  <dd>{site.hours[locale]}</dd>
-                </div>
-                <div>
-                  <dt>{t.contact.address}</dt>
-                  <dd>
-                    <RotatingAddress />
-                  </dd>
-                </div>
-              </dl>
-            </div>
-            <aside className="map-card">
-              <p className="kicker">{t.contact.map}</p>
-              <p className="map-card__address">{site.address[locale]}</p>
-              <a className="cta" href={site.mapLink} target="_blank" rel="noopener noreferrer">
-                {t.contact.mapOpen}
-              </a>
-            </aside>
+            <RotatingLocationProvider>
+              <div className="contact-card">
+                <p className="kicker">{site.name}</p>
+                <p className="brand-tag" style={{ marginTop: 8 }}>
+                  {site.tagline[locale]}
+                </p>
+                <dl>
+                  <div>
+                    <dt>{t.contact.phone}</dt>
+                    <dd>
+                      <a href={site.phoneHref}>{site.phone}</a>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>{t.contact.email}</dt>
+                    <dd>
+                      <a href={site.emailHref}>{site.email}</a>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>{t.contact.hours}</dt>
+                    <dd>{site.hours[locale]}</dd>
+                  </div>
+                  <div>
+                    <dt>{t.contact.address}</dt>
+                    <dd>
+                      <RotatingAddress />
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <MapLocationCard />
+            </RotatingLocationProvider>
           </div>
           <form id="formularz" className="form" onSubmit={onSubmit}>
             <input type="checkbox" name="botcheck" className="hp" tabIndex={-1} autoComplete="off" aria-hidden="true" />

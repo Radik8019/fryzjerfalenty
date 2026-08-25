@@ -9,7 +9,7 @@ const ICONS: Record<ThemeIconKind, { src: string; width: number; height: number 
     height: 459,
   },
   cut: {
-    src: '/images/icon-cut.webp?v=5',
+    src: '/images/icon-cut.webp?v=12',
     width: 400,
     height: 459,
   },

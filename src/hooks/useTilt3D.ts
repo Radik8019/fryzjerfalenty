@@ -63,8 +63,7 @@ export function useTilt3D(cfg?: TiltConfig) {
     img.style.transform =
       `perspective(${opts.perspective}px) rotateX(${rx}deg) rotateY(${ry}deg) scale3d(${newScale},${newScale},1)`
 
-    img.style.filter =
-      `drop-shadow(${-gx}px ${-gy}px 20px rgba(194,158,93,0.7)) drop-shadow(${-gx * 1.5}px ${-gy * 1.5}px 40px rgba(194,158,93,0.3))`
+    img.style.filter = 'none'
 
     raf.current = requestAnimationFrame(loop)
   }, [opts])

@@ -313,11 +313,9 @@
 .gallery-hero-icon__img.theme-icon--tilt,
 .gallery-hero-icon__img.theme-icon {
   width: clamp(80px, 14vw, 130px);
-  will-change: transform, filter;
+  will-change: transform;
   transform-style: preserve-3d;
-  filter:
-    drop-shadow(0 0 14px rgba(194, 158, 93, 0.7))
-    drop-shadow(0 0 36px rgba(194, 158, 93, 0.3));
+  filter: none;
   animation: gallery-icon-in 0.5s ease both;
   overflow: visible;
 }
@@ -329,9 +327,7 @@
 
 [data-theme='light'] .gallery-hero-icon__img.theme-icon--tilt,
 [data-theme='light'] .gallery-hero-icon__img.theme-icon {
-  filter:
-    drop-shadow(0 0 12px rgba(160, 120, 60, 0.45))
-    drop-shadow(0 0 28px rgba(160, 120, 60, 0.2));
+  filter: none;
 }
 
 

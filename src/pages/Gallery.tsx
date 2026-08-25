@@ -15,7 +15,7 @@ function parseGalleryCat(value: string | null): GalleryCategory | null {
 export function GalleryPage() {
   const { t } = useI18n()
   const [searchParams, setSearchParams] = useSearchParams()
-  const catFromUrl = parseGalleryCat(searchParams.get('cat')) ?? 'color'
+  const catFromUrl = parseGalleryCat(searchParams.get('cat')) ?? 'cut'
   const [filter, setFilter] = useState<GalleryCategory>(catFromUrl)
 
   useEffect(() => {
@@ -28,8 +28,8 @@ export function GalleryPage() {
   )
 
   const chips: { id: GalleryCategory; label: string }[] = [
-    { id: 'color', label: t.gallery.color },
     { id: 'cut', label: t.gallery.cut },
+    { id: 'color', label: t.gallery.color },
     { id: 'styling', label: t.gallery.styling },
   ]
 

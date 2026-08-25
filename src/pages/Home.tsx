@@ -112,13 +112,13 @@ export function HomePage() {
           <h2 className="display">{t.homeGallery.kicker}</h2>
 
           <div className="gallery-cats">
-            <Link className="gallery-cat" to={galleryCategoryHref(path.gallery, 'color')}>
-              <ThemeIcon kind="color" className="gallery-cat__icon" />
-              <span className="gallery-cat__name">{t.gallery.color}</span>
-            </Link>
             <Link className="gallery-cat" to={galleryCategoryHref(path.gallery, 'cut')}>
               <ThemeIcon kind="cut" className="gallery-cat__icon" />
               <span className="gallery-cat__name">{t.gallery.cut}</span>
+            </Link>
+            <Link className="gallery-cat" to={galleryCategoryHref(path.gallery, 'color')}>
+              <ThemeIcon kind="color" className="gallery-cat__icon" />
+              <span className="gallery-cat__name">{t.gallery.color}</span>
             </Link>
             <Link className="gallery-cat" to={galleryCategoryHref(path.gallery, 'styling')}>
               <ThemeIcon kind="curly" className="gallery-cat__icon" />

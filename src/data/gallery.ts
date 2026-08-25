@@ -196,11 +196,11 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-peach-pixie',
+    id: 'color-strawberry-pixie',
 
     category: 'color',
 
-    title: { pl: 'Morelowy pixie', en: 'Peach pixie' },
+    title: { pl: 'Truskawkowy pixie', en: 'Strawberry pixie' },
 
     technique: { pl: 'Koloryzacja', en: 'Colour' },
 
@@ -208,7 +208,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'rose',
 
-    image: '/images/gallery/color-peach-pixie.webp',
+    image: '/images/gallery/color-strawberry-pixie.webp',
     focus: '50% 6%',
 
   },
@@ -234,11 +234,11 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-strawberry-pixie',
+    id: 'color-peach-pixie',
 
     category: 'color',
 
-    title: { pl: 'Truskawkowy pixie', en: 'Strawberry pixie' },
+    title: { pl: 'Morelowy pixie', en: 'Peach pixie' },
 
     technique: { pl: 'Koloryzacja', en: 'Colour' },
 
@@ -246,7 +246,7 @@ export const galleryWorks: GalleryWork[] = [
 
     tone: 'rose',
 
-    image: '/images/gallery/color-strawberry-pixie.webp',
+    image: '/images/gallery/color-peach-pixie.webp',
     focus: '50% 6%',
 
   },

@@ -215,25 +215,6 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-rose-undercut',
-
-    category: 'color',
-
-    title: { pl: 'Różowy undercut', en: 'Rose undercut' },
-
-    technique: { pl: 'Koloryzacja', en: 'Colour' },
-
-    note: { pl: '', en: '' },
-
-    tone: 'champagne',
-
-    image: '/images/gallery/color-rose-undercut.webp',
-    focus: '50% 6%',
-
-  },
-
-  {
-
     id: 'color-peach-pixie',
 
     category: 'color',
@@ -247,6 +228,25 @@ export const galleryWorks: GalleryWork[] = [
     tone: 'rose',
 
     image: '/images/gallery/color-peach-pixie.webp',
+    focus: '50% 6%',
+
+  },
+
+  {
+
+    id: 'color-rose-undercut',
+
+    category: 'color',
+
+    title: { pl: 'Różowy undercut', en: 'Rose undercut' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/color-rose-undercut.webp',
     focus: '50% 6%',
 
   },

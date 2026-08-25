@@ -234,19 +234,19 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
-    id: 'color-ash-before-after',
+    id: 'color-strawberry-pixie',
 
     category: 'color',
 
-    title: { pl: 'Korekta blondu', en: 'Blonde correction' },
+    title: { pl: 'Truskawkowy pixie', en: 'Strawberry pixie' },
 
     technique: { pl: 'Koloryzacja', en: 'Colour' },
 
     note: { pl: '', en: '' },
 
-    tone: 'champagne',
+    tone: 'rose',
 
-    image: '/images/gallery/color-ash-before-after-v2.webp',
+    image: '/images/gallery/color-strawberry-pixie.webp',
     focus: '50% 6%',
 
   },
@@ -314,6 +314,25 @@ export const galleryWorks: GalleryWork[] = [
     focus: '50% 35%',
 
     fit: 'contain',
+
+  },
+
+  {
+
+    id: 'color-ash-before-after',
+
+    category: 'color',
+
+    title: { pl: 'Korekta blondu', en: 'Blonde correction' },
+
+    technique: { pl: 'Koloryzacja', en: 'Colour' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/color-ash-before-after-v2.webp',
+    focus: '50% 6%',
 
   },
 

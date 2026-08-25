@@ -414,6 +414,66 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
+    id: 'cut-honey-angled-bob',
+
+    category: 'cut',
+
+    title: { pl: 'Bob kątowy — miodowy', en: 'Honey angled bob' },
+
+    technique: { pl: 'Strzyżenie', en: 'Cut' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'sand',
+
+    image: '/images/gallery/cut-honey-angled-bob.webp',
+
+    fit: 'contain',
+
+  },
+
+  {
+
+    id: 'cut-honey-blunt-nape',
+
+    category: 'cut',
+
+    title: { pl: 'Bob — kark', en: 'Honey blunt bob' },
+
+    technique: { pl: 'Strzyżenie', en: 'Cut' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'noir',
+
+    image: '/images/gallery/cut-honey-blunt-nape.webp',
+
+    fit: 'contain',
+
+  },
+
+  {
+
+    id: 'cut-honey-aline-lob',
+
+    category: 'cut',
+
+    title: { pl: 'A-line — miodowy', en: 'Honey A-line bob' },
+
+    technique: { pl: 'Strzyżenie', en: 'Cut' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'champagne',
+
+    image: '/images/gallery/cut-honey-aline-lob.webp',
+
+    fit: 'contain',
+
+  },
+
+  {
+
     id: 'curly-volume',
 
     category: 'styling',

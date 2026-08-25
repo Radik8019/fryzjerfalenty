@@ -63,8 +63,13 @@ export function useTilt3D(cfg?: TiltConfig) {
     img.style.transform =
       `perspective(${opts.perspective}px) rotateX(${rx}deg) rotateY(${ry}deg) scale3d(${newScale},${newScale},1)`
 
+    const glowStrength = Number.parseFloat(img.dataset.glowStrength ?? '1') || 1
+    const near = Math.min(0.98, 0.7 * glowStrength)
+    const far = Math.min(0.72, 0.3 * glowStrength)
+    const nearBlur = Math.round(20 * (glowStrength > 1 ? 1.15 : 1))
+    const farBlur = Math.round(40 * (glowStrength > 1 ? 1.2 : 1))
     img.style.filter =
-      `drop-shadow(${-gx}px ${-gy}px 20px rgba(194,158,93,0.7)) drop-shadow(${-gx * 1.5}px ${-gy * 1.5}px 40px rgba(194,158,93,0.3))`
+      `drop-shadow(${-gx}px ${-gy}px ${nearBlur}px rgba(194,158,93,${near})) drop-shadow(${-gx * 1.5}px ${-gy * 1.5}px ${farBlur}px rgba(194,158,93,${far}))`
 
     raf.current = requestAnimationFrame(loop)
   }, [opts])

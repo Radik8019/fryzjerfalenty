@@ -28,6 +28,8 @@ type Props = {
 
 export function ThemeIcon({ kind, className = '', tilt = false }: Props) {
   const icon = ICONS[kind]
+  /** Scissors silhouette is thinner (~22% opaque vs ~42–50%), so glow needs a boost to match. */
+  const glowStrength = kind === 'cut' ? 1.9 : 1
   const wrapperClass = [
     'theme-icon',
     `theme-icon--${kind}`,
@@ -51,10 +53,18 @@ export function ThemeIcon({ kind, className = '', tilt = false }: Props) {
   )
 
   if (tilt) {
-    return <div className={wrapperClass}>{img}</div>
+    return (
+      <div className={wrapperClass} data-glow-strength={glowStrength}>
+        {img}
+      </div>
+    )
   }
 
-  return <span className={wrapperClass}>{img}</span>
+  return (
+    <span className={wrapperClass} data-glow-strength={glowStrength}>
+      {img}
+    </span>
+  )
 }
 
 export function galleryIconKind(filter: 'color' | 'cut' | 'styling'): ThemeIconKind {

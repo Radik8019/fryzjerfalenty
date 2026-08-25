@@ -327,11 +327,26 @@
   width: calc(clamp(80px, 14vw, 130px) * 1.1);
 }
 
+/* Scissors: thinner silhouette — stronger glow so presence matches colour/curly */
+.gallery-hero-icon__img.theme-icon--cut {
+  filter:
+    drop-shadow(0 0 16px rgba(194, 158, 93, 0.95))
+    drop-shadow(0 0 28px rgba(194, 158, 93, 0.7))
+    drop-shadow(0 0 48px rgba(194, 158, 93, 0.42));
+}
+
 [data-theme='light'] .gallery-hero-icon__img.theme-icon--tilt,
 [data-theme='light'] .gallery-hero-icon__img.theme-icon {
   filter:
     drop-shadow(0 0 12px rgba(160, 120, 60, 0.45))
     drop-shadow(0 0 28px rgba(160, 120, 60, 0.2));
+}
+
+[data-theme='light'] .gallery-hero-icon__img.theme-icon--cut {
+  filter:
+    drop-shadow(0 0 14px rgba(160, 120, 60, 0.7))
+    drop-shadow(0 0 26px rgba(160, 120, 60, 0.45))
+    drop-shadow(0 0 44px rgba(160, 120, 60, 0.28));
 }
 
 

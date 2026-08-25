@@ -474,6 +474,46 @@ export const galleryWorks: GalleryWork[] = [
 
   {
 
+    id: 'cut-stacked-bob-side',
+
+    category: 'cut',
+
+    title: { pl: 'Bob warstwowy', en: 'Stacked bob' },
+
+    technique: { pl: 'Strzyżenie', en: 'Cut' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'sand',
+
+    image: '/images/gallery/cut-stacked-bob-side.webp',
+
+    fit: 'contain',
+
+  },
+
+  {
+
+    id: 'cut-graduated-bob-nape',
+
+    category: 'cut',
+
+    title: { pl: 'Bob stopniowany — tył', en: 'Graduated bob nape' },
+
+    technique: { pl: 'Strzyżenie', en: 'Cut' },
+
+    note: { pl: '', en: '' },
+
+    tone: 'stone',
+
+    image: '/images/gallery/cut-graduated-bob-nape.webp',
+
+    fit: 'contain',
+
+  },
+
+  {
+
     id: 'curly-volume',
 
     category: 'styling',

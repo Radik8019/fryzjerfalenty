@@ -263,8 +263,24 @@
   display: none;
 }
 
-.mobile-nav {
+.mobile-nav,
+.mobile-nav-backdrop {
   display: none;
+}
+
+html.menu-open,
+body.menu-open {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body.menu-open {
+  touch-action: none;
+}
+
+body.menu-open .cookie-notice {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .site-footer {
@@ -327,6 +343,8 @@
 @media (max-width: 960px) {
   .nav-desktop {
     display: none;
+    pointer-events: none;
+    visibility: hidden;
   }
 
   .header-inner {
@@ -338,12 +356,32 @@
     gap: 0;
   }
 
+  .header-tools {
+    position: relative;
+    z-index: 2;
+  }
+
   .header-tools .cta-desktop {
     display: none;
   }
 
   .menu-toggle {
     display: grid;
+    position: relative;
+    z-index: 3;
+  }
+
+  .mobile-nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 38;
+    background: rgba(6, 8, 16, 0.42);
+    touch-action: none;
+  }
+
+  [data-theme='light'] .mobile-nav-backdrop {
+    background: rgba(26, 20, 16, 0.28);
   }
 
   .mobile-nav {
@@ -357,10 +395,15 @@
     background-position: center top;
     padding: 20px calc(var(--page-gutter) + var(--safe-right)) calc(32px + var(--safe-bottom)) calc(var(--page-gutter) + var(--safe-left));
     gap: 4px;
-    z-index: 35;
+    z-index: 39;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
+    pointer-events: none;
+  }
+
+  .mobile-nav.is-ready {
+    pointer-events: auto;
   }
 
   .mobile-nav a,

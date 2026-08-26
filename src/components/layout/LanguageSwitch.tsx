@@ -5,7 +5,7 @@ import { useI18n } from '../../hooks/useI18n'
 
 export function LanguageSwitch() {
   const { locale, t } = useI18n()
-  const { pathname } = useLocation()
+  const { pathname, hash, search } = useLocation()
   const navigate = useNavigate()
   const [open, setOpen] = useState(false)
   const wrapRef = useRef<HTMLDivElement>(null)
@@ -33,7 +33,7 @@ export function LanguageSwitch() {
     } catch {
       /* ignore */
     }
-    navigate(switchLocalePath(pathname, next))
+    navigate(`${switchLocalePath(pathname, next)}${search}${hash}`)
     setOpen(false)
   }
 

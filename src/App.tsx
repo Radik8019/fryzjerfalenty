@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
 import { routerBasename } from './config/assets'
+import { localeFromPath, paths } from './config/routes'
 import { ThemeProvider } from './context/ThemeProvider'
 import { AboutPage } from './pages/About'
 import { ContactPage } from './pages/Contact'
@@ -25,6 +26,12 @@ function ScrollToTop() {
   return null
 }
 
+function NotFoundRedirect() {
+  const { pathname } = useLocation()
+  const home = paths[localeFromPath(pathname)].home
+  return <Navigate to={home} replace />
+}
+
 function AppRoutes() {
   return (
     <>
@@ -43,7 +50,7 @@ function AppRoutes() {
           <Route path="/en/services" element={<ServicesPage />} />
           <Route path="/en/contact" element={<ContactPage />} />
           <Route path="/en/privacy" element={<LegalPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<NotFoundRedirect />} />
         </Route>
       </Routes>
     </>

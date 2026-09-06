@@ -10,8 +10,15 @@ export function usePrefersReducedMotion() {
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)')
     const onChange = () => setReduced(media.matches)
-    media.addEventListener('change', onChange)
-    return () => media.removeEventListener('change', onChange)
+
+    // Safari < 14 used addListener/removeListener on MediaQueryList.
+    if (typeof media.addEventListener === 'function') {
+      media.addEventListener('change', onChange)
+      return () => media.removeEventListener('change', onChange)
+    }
+
+    media.addListener(onChange)
+    return () => media.removeListener(onChange)
   }, [])
 
   return reduced

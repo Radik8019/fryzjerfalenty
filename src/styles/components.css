@@ -311,11 +311,9 @@ body.gallery-lightbox-open {
 .gallery-lightbox__panel {
   position: relative;
   z-index: 1;
-  width: min(960px, 100%);
-  height: min(92dvh, 100%);
-  height: min(92svh, 100%);
+  width: min(600px, 100%);
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto;
   gap: 10px;
   pointer-events: none;
 }

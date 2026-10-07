@@ -20,27 +20,27 @@ export const site = {
     en: 'By appointment only',
   },
   address: {
-    pl: 'Droga Hrabska 6/10, Falenty Nowe',
-    en: 'Droga Hrabska 6/10, Falenty Nowe',
+    pl: 'Droga Hrabska 6/10, 05-090 Falenty Nowe',
+    en: 'Droga Hrabska 6/10, 05-090 Falenty Nowe',
   },
   mapLink:
-    'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
+    'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+05-090+Falenty+Nowe',
   locations: [
     {
       address: {
-        pl: 'Droga Hrabska 6/10, Falenty Nowe',
-        en: 'Droga Hrabska 6/10, Falenty Nowe',
+        pl: 'Droga Hrabska 6/10, 05-090 Falenty Nowe',
+        en: 'Droga Hrabska 6/10, 05-090 Falenty Nowe',
       },
       mapLink:
-        'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+Falenty+Nowe',
+        'https://www.google.com/maps/search/?api=1&query=Droga+Hrabska+6%2F10%2C+05-090+Falenty+Nowe',
     },
     {
       address: {
-        pl: 'ul. Mokotowska 65/5, Warszawa',
-        en: 'Mokotowska 65/5, Warsaw',
+        pl: 'ul. Mokotowska 65/5, 00-533 Warszawa',
+        en: 'Mokotowska 65/5, 00-533 Warsaw',
       },
       mapLink:
-        'https://www.google.com/maps/search/?api=1&query=ul.+Mokotowska+65%2F5%2C+Warszawa',
+        'https://www.google.com/maps/search/?api=1&query=ul.+Mokotowska+65%2F5%2C+00-533+Warszawa',
     },
   ],
   splitforms: {

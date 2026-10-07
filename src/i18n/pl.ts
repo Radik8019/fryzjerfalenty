@@ -129,7 +129,7 @@ export const pl = {
     p1: 'Strona ma charakter wizytówki atelier. Nie prowadzimy kont użytkowników. Formularz kontaktowy przesyła zapytanie na adres falenty.hair@wp.pl za pośrednictwem Splitforms (dostawca formularza). Splitforms przetwarza treść zgłoszenia w celu dostarczenia wiadomości.',
     p2: 'Motyw (jasny/ciemny) oraz język mogą być zapamiętane w przeglądarce (localStorage), wyłącznie po to, by strona wyglądała tak, jak ją zostawiłaś.',
     p3: 'Zdjęcia klientek publikujemy wyłącznie za zgodą. Do czasu dostarczenia materiałów stosujemy placeholdery.',
-    p4: 'W sprawie danych osobowych: Radosław Kostiw, Droga Hrabska 6/10, Falenty Nowe, tel. +48 666 627 107, falenty.hair@wp.pl.',
+    p4: 'W sprawie danych osobowych: Radosław Kostiw, Droga Hrabska 6/10, 05-090 Falenty Nowe, tel. +48 666 627 107, falenty.hair@wp.pl.',
     cookies: 'Nie używamy cookies reklamowych ani analityki. Motyw i język zapisujemy lokalnie w przeglądarce. Formularz kontaktowy przesyła zapytanie przez Splitforms na falenty.hair@wp.pl. Mapa Google otwiera się dopiero po Twoim kliknięciu (zewnętrzna strona).',
   },
   footer: {

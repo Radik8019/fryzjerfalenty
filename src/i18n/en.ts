@@ -131,7 +131,7 @@ export const en: Messages = {
     p1: 'This site is the atelier’s visiting card. We do not keep user accounts. The contact form sends your enquiry to falenty.hair@wp.pl via Splitforms (the form provider). Splitforms processes the submission in order to deliver the message.',
     p2: 'Theme (light/dark) and language may be remembered in the browser (localStorage), solely so the site appears as you left it.',
     p3: 'Client photographs are published only with consent. Until materials are provided, placeholders are used.',
-    p4: 'For personal data: Radosław Kostiw, 6/10 Droga Hrabska, Falenty Nowe, tel. +48 666 627 107, falenty.hair@wp.pl.',
+    p4: 'For personal data: Radosław Kostiw, 6/10 Droga Hrabska, 05-090 Falenty Nowe, tel. +48 666 627 107, falenty.hair@wp.pl.',
     cookies: 'We do not use advertising cookies or analytics. Theme and language are stored locally in your browser. The contact form sends your enquiry via Splitforms to falenty.hair@wp.pl. Google Maps opens only after you click through (an external site).',
   },
   footer: {

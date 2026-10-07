@@ -85,7 +85,9 @@ export function GlowTile({ work }: Props) {
               <p id={titleId} className="gallery-lightbox__title">
                 {work.title[locale]}
               </p>
-              <div className="gallery-lightbox__stage">
+              <div
+                className={`gallery-lightbox__stage glow-tile--${work.tone}${work.fit === 'contain' ? ' gallery-lightbox__stage--contain' : ''}`}
+              >
                 <img
                   className="gallery-lightbox__img"
                   src={publicUrl(work.image)}
@@ -93,6 +95,7 @@ export function GlowTile({ work }: Props) {
                   decoding="async"
                   draggable={false}
                   referrerPolicy="strict-origin-when-cross-origin"
+                  style={work.focus ? ({ '--photo-focus': work.focus } as CSSProperties) : undefined}
                 />
               </div>
               <button

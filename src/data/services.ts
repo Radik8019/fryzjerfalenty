@@ -146,7 +146,7 @@ export const services: Service[] = [
     group: 'gentlemen',
     name: { pl: 'Pielęgnacja zarostu', en: 'Beard care' },
     detail: { pl: 'Broda i kontur', en: 'Beard and contour' },
-    price: { pl: 'w cenie zabiegów', en: 'included with services' },
+    price: from(50),
   },
 ]
 

@@ -8,7 +8,11 @@ function MenuItem({ item }: { item: Service }) {
 
   return (
     <li className="menu-item">
-      <p className="menu-item__name">{item.name[locale]}</p>
+      <div className="menu-item__row">
+        <p className="menu-item__name">{item.name[locale]}</p>
+        <span className="menu-item__leader" aria-hidden="true" />
+        <p className="menu-item__price">{item.price[locale]}</p>
+      </div>
     </li>
   )
 }

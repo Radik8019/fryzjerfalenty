@@ -97,7 +97,7 @@ export const en: Messages = {
   services: {
     kicker: 'Atelier',
     title: 'Service card',
-    lead: 'Every service is chosen individually. Prices are set after a professional consultation.',
+    lead: 'Ladies’ and gentlemen’s colour prices include a cut. Does not apply to toning.',
     ladies: 'For her',
     gentlemen: 'For him',
     note: 'Prices are set after a professional consultation.',

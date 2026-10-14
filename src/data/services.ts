@@ -55,7 +55,7 @@ export const services: Service[] = [
     group: 'ladies',
     name: { pl: 'Refleksy', en: 'Highlights' },
     detail: { pl: 'Koloryzacja', en: 'Colour' },
-    price: from(400),
+    price: from(500),
   },
   {
     id: 'ladies-ombre',

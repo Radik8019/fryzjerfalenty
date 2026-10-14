@@ -95,7 +95,7 @@ export const pl = {
   services: {
     kicker: 'Atelier',
     title: 'Karta usług',
-    lead: 'Każda usługa dobierana indywidualnie. Ceny ustalane po profesjonalnej konsultacji.',
+    lead: 'Ceny koloryzacji damskich i męskich podane wraz ze strzyżeniem. Nie dotyczy tonowania.',
     ladies: 'Dla Pań',
     gentlemen: 'Dla Panów',
     note: 'Ceny ustalane po profesjonalnej konsultacji.',
